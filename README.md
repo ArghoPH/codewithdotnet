@@ -78,4 +78,4 @@ npm run dev
 
 ## 👨‍💻 Author
 
-Built by Me 🚀
+Built by Argho Chakma
