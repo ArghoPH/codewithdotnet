@@ -1072,7 +1072,7 @@ export const lessons = [
     <div class="relative bg-white p-6 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 hover:scale-105 transition-transform duration-300">
       <div class="absolute -top-3 -left-3 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">01</div>
       <h3 class="text-xl font-bold text-slate-800 mt-2 mb-3">main.js</h3>
-      <p class="text-slate-600 text-sm leading-relaxed">Vue app এর entry point. ব্রাউজার app open করলে এখান থেকেই execution শুরু হয়।</p>
+      <p class="text-slate-600 text-sm leading-relaxed">Vue app এর entry point. ব্রাউজার app open করলে এখান থেকেই execution শুরু হয়। </p>
     </div>
 
     <div class="relative bg-white p-6 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 hover:scale-105 transition-transform duration-300">
@@ -1103,7 +1103,7 @@ export const lessons = [
   </div>
 </div>
 
-<div class="github-readme font-sans text-slate-800 max-w-6xl mx-auto leading-relaxed p-5">
+<div class="github-readme font-sans text-slate-800 max-w-6xl mx-auto leading-relaxed">
 
   <!-- Section: Main Header -->
   <div class="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-gradient-to-br from-white via-slate-50/50 to-blue-50/20 p-8 shadow-sm mb-12">
@@ -1118,7 +1118,7 @@ export const lessons = [
     <i class="fa-solid fa-layer-group text-slate-700"></i> Architecture Pillars & Component Lifecycles
   </h2>
 
-  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 my-4">
+  <div class="grid gap-6 md:grid-cols-2 mx-auto lg:grid-cols-3">
     
     <!-- 1. main.js -->
     <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-blue-200 flex flex-col justify-between">
