@@ -19,7 +19,12 @@ const route = useRoute()
         </p>
 
         <nav class="mt-10 space-y-3">
-            <RouterLink to="/" class="block rounded-lg px-4 py-3 hover:bg-slate-800">
+            <RouterLink to="/" :class="[
+                'block rounded-lg px-4 py-3 transition',
+                route.path === '/'
+                    ? 'bg-slate-800 text-white'
+                    : 'text-slate-300 hover:bg-slate-800'
+            ]">
                 Home
             </RouterLink>
 
