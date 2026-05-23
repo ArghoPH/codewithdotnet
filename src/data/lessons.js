@@ -705,18 +705,6 @@ export const lessons = [
         content: `
 <div class="github-readme font-sans text-slate-800 mx-auto leading-relaxed p-5">
 
-  <!-- Header Section -->
-  <div class="mb-8 p-6 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-xl text-white shadow-md relative overflow-hidden">
-    <div class="absolute right-4 top-4 opacity-10 text-7xl"><i class="fa-solid fa-code-branch"></i></div>
-    <span class="px-2.5 py-1 text-xs font-semibold bg-indigo-500/30 text-indigo-300 rounded-full border border-indigo-500/20 uppercase tracking-wider">Devlog #01</span>
-    <h1 class="text-3xl font-extrabold mt-2 mb-2 tracking-tight text-white flex items-center gap-2.5">
-      <i class="fa-solid fa-cubes text-indigo-400"></i> Project Inception: CodeWithDotNet
-    </h1>
-    <p class="text-slate-300 text-sm max-w-2xl leading-relaxed">
-      Building a modern, documentation-style learning platform to publicly document my journey into the .NET ecosystem, step-by-step.
-    </p>
-  </div>
-
   <!-- Core Vision & Purpose -->
   <h2 class="pb-1 text-2xl font-bold mt-6 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
     <i class="fa-solid fa-bullseye text-rose-500"></i> The Core Mission
