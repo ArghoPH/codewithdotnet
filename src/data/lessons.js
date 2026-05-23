@@ -389,7 +389,7 @@ export const lessons = [
     <i class="fa-solid fa-brain text-purple-600"></i> Important Concepts in C#
   </h2>
   <p class="mt-0 mb-2 text-base">To build intermediate and advanced systems, every developer needs to master these core pillars:</p>
-  <div class="grid grid-cols-2 gap-2 max-w-md my-4">
+  <div class="grid grid-cols-2 gap-2 max-w my-4">
     <div class="flex items-center gap-2 text-base"><i class="fa-solid fa-circle-check text-green-600 text-xs"></i> <span>Variables</span></div>
     <div class="flex items-center gap-2 text-base"><i class="fa-solid fa-circle-check text-green-600 text-xs"></i> <span>Objects</span></div>
     <div class="flex items-center gap-2 text-base"><i class="fa-solid fa-circle-check text-green-600 text-xs"></i> <span>Functions</span></div>
