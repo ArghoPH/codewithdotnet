@@ -1753,83 +1753,95 @@ const isSidebarOpen = ref(false)
 
     <div class="space-y-8 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-slate-200/60">
       
-      <!-- Step 1 -->
-      <div class="relative pl-12">
-        <div class="absolute left-2 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 ring-4 ring-white text-emerald-700 font-mono text-xs font-bold">1</div>
-        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
-          <i class="fa-solid fa-code text-emerald-600 text-sm"></i> index.html ও main.js এর কানেকশন
-        </h3>
-        <p class="text-slate-500 text-xs font-mono uppercase tracking-wider mt-0.5">The Entry Point</p>
-        <p class="text-slate-600 text-sm mt-2">
-          ব্রাউজার যখন অ্যাপ্লিকেশনটি ওপেন করে, সে সবার আগে bg-[#1e1e1e] <span class="bg-[#1e1e1e] text-[#98c379] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">index.html</span> ফাইলটি লোড করে। এই ফাইলে একটি মাত্র খালি <span class="bg-[#1e1e1e] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800"><span class="text-[#e06c75]">&lt;div</span> <span class="text-[#d19a66]">id</span>=<span class="text-[#98c379]">"app"</span><span class="text-[#e06c75]">&gt;&lt;/div&gt;</span></span> থাকে। আধুনিক বিল্ড টুল (Vite) এই ফাইলের স্ক্রিপ্ট ট্যাগ দিয়ে <span class="bg-[#1e1e1e] text-[#61afef] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">main.js</span>-কে যুক্ত করে দেয়, যা অ্যাপের মেইন ইঞ্জিন চালু করার নির্দেশ দেয়।
-        </p>
-      </div>
+    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-lg max-w-4xl mx-auto">
+  
+  <div class="mb-8 border-b border-slate-100 pb-4">
+    <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">Vue.js Architecture Flow</h2>
+    <p class="text-slate-500 text-sm mt-1">কিভাবে ব্রাউজার থেকে শুরু করে রাউটার পর্যন্ত ডেটা ফ্লো কাজ করে তার বিস্তারিত ধাপ।</p>
+  </div>
 
-      <!-- Step 2 -->
-      <div class="relative pl-12">
-        <div class="absolute left-2 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-4 ring-white text-blue-700 font-mono text-xs font-bold">2</div>
-        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
-          <i class="fa-solid fa-bolt text-blue-600 text-sm"></i> main.js এ ইঞ্জিন চালু ও রাউটার ইনজেকশন
-        </h3>
-        <p class="text-slate-500 text-xs font-mono uppercase tracking-wider mt-0.5">The Initialization</p>
-        <p class="text-slate-600 text-sm mt-2">
-          <span class="bg-[#1e1e1e] text-[#61afef] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">main.js</span> ফাইলে Vue এর <span class="bg-[#1e1e1e] text-[#56b6c2] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">createApp</span> ফাংশন রান করে কোর ইঞ্জিন তৈরি করা হয়। এখানে দুটি মেইন মডিউল ইমপোর্ট করা হয়: অ্যাপের পুরো কঙ্কাল বা মেইন লেআউট <span class="bg-[#1e1e1e] text-[#e5c07b] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">App.vue</span> এবং অ্যাপের রাস্তার গাইড ম্যাপ <span class="bg-[#1e1e1e] text-[#e06c75] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">router (router/index.js)</span>। এরপর <span class="bg-[#1e1e1e] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800"><span class="text-[#e06c75]">app</span>.<span class="text-[#56b6c2]">use</span>(<span class="text-[#e06c75]">router</span>).<span class="text-[#56b6c2]">mount</span>(<span class="text-[#98c379]">'#app'</span>)</span> কোডটি দিয়ে রাউটারসহ পুরো সিস্টেমটাকে index.html-এর সেই খালি ডিভের ভেতর ইনজেক্ট করে দেওয়া হয়।
-        </p>
-      </div>
-
-      <!-- Step 3 -->
-      <div class="relative pl-12">
-        <div class="absolute left-2 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-orange-100 ring-4 ring-white text-orange-700 font-mono text-xs font-bold">3</div>
-        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
-          <i class="fa-solid fa-border-all text-orange-600 text-sm"></i> App.vue এর মেইন লেআউট সেটআপ
-        </h3>
-        <p class="text-slate-500 text-xs font-mono uppercase tracking-wider mt-0.5">The Layout Root</p>
-        <p class="text-slate-600 text-sm mt-2">
-          এখন স্ক্রিনে <span class="bg-[#1e1e1e] text-[#e5c07b] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">App.vue</span> লোড হয়ে গেছে। এটি একটি গ্লোবাল লেআউট বা মেইন হোল্ডার শেল হিসেবে কাজ করে। এর ভেতরে সাধারণত আমরা দুটি মূল কম্পোনেন্ট জোন ডিফাইন করি:
-        </p>
-        <ul class="list-disc pl-5 mt-2 space-y-2 text-sm text-slate-600">
-          <li><span class="bg-[#1e1e1e] text-[#e5c07b] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">Sidebar.vue</span> Component: যা স্ক্রিনের একপাশে ফিক্সড হিসেবে রেন্ডার হয়।</li>
-          <li><span class="bg-[#1e1e1e] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800"><span class="text-[#e06c75]">&lt;RouterView</span> <span class="text-[#e06c75]/80">/&gt;</span></span>: এটি একটি ডায়নামিক প্লেসহোল্ডার। ইউজার যখন যে পেজে যাবে, রাউটার সেই পেজের কন্টেন্ট এনে এই খালি প্লাগ পয়েন্টে রেন্ডার করবে।</li>
-        </ul>
-      </div>
-
-      <!-- Step 4 -->
-      <div class="relative pl-12">
-        <div class="absolute left-2 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-yellow-100 ring-4 ring-white text-yellow-700 font-mono text-xs font-bold">4</div>
-        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
-          <i class="fa-solid fa-link text-yellow-600 text-sm"></i> Sidebar এ RouterLink এর নেভিগেশন ট্রিপ
-        </h3>
-        <p class="text-slate-500 text-xs font-mono uppercase tracking-wider mt-0.5">The Navigation Trigger</p>
-        <p class="text-slate-600 text-sm mt-2">
-          সাইডবারের ভেতরে আমরা <span class="bg-[#1e1e1e] text-[#e06c75] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">lessons.js</span> ফাইল থেকে লুপ চালিয়ে প্রতিটি লেসনের জন্য আলাদা লিংক তৈরি করি। প্রথাগত HTML এর <span class="bg-[#1e1e1e] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800"><span class="text-[#e06c75]">&lt;a</span> <span class="text-[#d19a66]">href</span>=<span class="text-[#98c379]">"..."</span><span class="text-[#e06c75]">&gt;</span></span> ট্যাগের পরিবর্তে আমরা ব্যবহার করি <span class="bg-[#1e1e1e] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800"><span class="text-[#e06c75]">&lt;RouterLink</span> <span class="text-[#d19a66]">:to</span>=<span class="text-[#98c379]">"..."</span><span class="text-[#e06c75]">&gt;</span></span>। ইউজার যখন কোনো লিংকে ক্লিক করে, এটি ব্রাউজারকে সম্পূর্ণ পেজ রিফ্রেশ হতে দেয় না, সে কেবল ব্রাউজারের URL পাথটি পরিবর্তন করে দেয় (যেমন: <span class="bg-[#1e1e1e] text-[#98c379] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">/lessons/what-is-dotnet</span>)।
-        </p>
-      </div>
-
-      <!-- Step 5 -->
-      <div class="relative pl-12">
-        <div class="absolute left-2 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-pink-100 ring-4 ring-white text-pink-700 font-mono text-xs font-bold">5</div>
-        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
-          <i class="fa-solid fa-file-invoice text-pink-600 text-sm"></i> RouterView ও Dynamic Content রেন্ডারিং
-        </h3>
-        <p class="text-slate-500 text-xs font-mono uppercase tracking-wider mt-0.5">The Final Destination</p>
-        <p class="text-slate-600 text-sm mt-2">
-          URL বার পরিবর্তন হওয়া মাত্রই ব্যাকএন্ডে সজাগ হয়ে যায় <span class="bg-[#1e1e1e] text-[#e06c75] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">router/index.js</span>। সে তার ডিফাইন করা ম্যাপের সাথে বর্তমান URL মিলিয়ে দেখে। যখন সে দেখে যে এই প্যাটার্নের সাথে <span class="bg-[#1e1e1e] text-[#e5c07b] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">LessonPage.vue</span> কম্পোনেন্টটি অ্যাসাইন করা আছে, সে তৎক্ষণাৎ সেই কম্পোনেন্টটিকে ডেকে এনে <span class="bg-[#1e1e1e] text-[#e5c07b] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">App.vue</span>-এর ভেতরে থাকা <span class="bg-[#1e1e1e] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800"><span class="text-[#e06c75]">&lt;RouterView</span> <span class="text-[#e06c75]/80">/&gt;</span></span>-এর জায়গায় সোয়াপ বা রিপ্লেস করে দেয়। <span class="bg-[#1e1e1e] text-[#e5c07b] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">LessonPage</span> তখন URL-এর ডাইনামিক <span class="bg-[#1e1e1e] text-[#d19a66] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">:slug</span> প্যারামিটার রিড করে <span class="bg-[#1e1e1e] text-[#e06c75] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">lessons.js</span> থেকে নির্দিষ্ট অবজেক্টটি ফিল্টার করে স্ক্রিনে শো করে।
-        </p>
-      </div>
-
+  <!-- Timeline Container with Vertical Line -->
+  <div class="relative space-y-10 before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[2px] before:bg-slate-200">
+    
+    <!-- Step 1 -->
+    <div class="relative pl-12 group">
+      <div class="absolute left-0 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 ring-4 ring-white text-emerald-700 font-mono text-xs font-bold z-10 group-hover:scale-110 group-hover:bg-emerald-200 transition-transform">1</div>
+      <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+        <i class="fa-solid fa-code text-emerald-600 text-sm"></i> index.html ও main.js এর কানেকশন
+      </h3>
+      <p class="text-slate-400 text-xs font-mono uppercase tracking-wider mt-0.5">The Entry Point</p>
+      <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+        ব্রাউজার যখন অ্যাপ্লিকেশনটি ওপেন করে, সে সবার আগে <span class="bg-amber-50 text-amber-700 font-mono px-1.5 py-0.5 rounded text-xs border border-amber-200 shadow-sm">index.html</span> ফাইলটি লোড করে। এই ফাইলে একটি মাত্র খালি <span class="bg-slate-50 font-mono px-1.5 py-0.5 rounded text-xs border border-slate-200 shadow-sm"><span class="text-indigo-600">&lt;div</span> <span class="text-sky-600">id</span>=<span class="text-emerald-600">"app"</span><span class="text-indigo-600">&gt;&lt;/div&gt;</span></span> থাকে। আধুনিক বিল্ড টুল (Vite) এই ফাইলের স্ক্রিপ্ট ট্যাগ দিয়ে <span class="bg-blue-50 text-blue-700 font-mono px-1.5 py-0.5 rounded text-xs border border-blue-200 shadow-sm">main.js</span>-কে যুক্ত করে দেয়, যা অ্যাপের মেইন ইঞ্জিন চালু করার নির্দেশ দেয়।
+      </p>
     </div>
+
+    <!-- Step 2 -->
+    <div class="relative pl-12 group">
+      <div class="absolute left-0 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-4 ring-white text-blue-700 font-mono text-xs font-bold z-10 group-hover:scale-110 group-hover:bg-blue-200 transition-transform">2</div>
+      <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+        <i class="fa-solid fa-bolt text-blue-600 text-sm"></i> main.js এ ইঞ্জিন চালু ও রাউটার ইনজেকশন
+      </h3>
+      <p class="text-slate-400 text-xs font-mono uppercase tracking-wider mt-0.5">The Initialization</p>
+      <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+        <span class="bg-blue-50 text-blue-700 font-mono px-1.5 py-0.5 rounded text-xs border border-blue-200 shadow-sm">main.js</span> ফাইলে Vue এর <span class="bg-violet-50 text-violet-700 font-mono px-1.5 py-0.5 rounded text-xs border border-violet-200 shadow-sm">createApp</span> ফাংশন রান করে কোর ইঞ্জিন তৈরি করা হয়। এখানে দুটি মেইন মডিউল ইমপোর্ট করা হয়: অ্যাপের পুরো কঙ্কাল বা মেইন লেআউট <span class="bg-emerald-50 text-emerald-700 font-mono px-1.5 py-0.5 rounded text-xs border border-emerald-200 shadow-sm">App.vue</span> এবং অ্যাপের রাস্তার গাইড ম্যাপ <span class="bg-rose-50 text-rose-700 font-mono px-1.5 py-0.5 rounded text-xs border border-rose-200 shadow-sm">router (router/index.js)</span>। এরপর <span class="bg-slate-50 font-mono px-1.5 py-0.5 rounded text-xs border border-slate-200 shadow-sm"><span class="text-slate-800">app</span>.<span class="text-violet-600">use</span>(<span class="text-slate-800">router</span>).<span class="text-violet-600">mount</span>(<span class="text-emerald-600">'#app'</span>)</span> কোডটি দিয়ে রাউটারসহ পুরো সিস্টেমটাকে index.html-এর সেই খালি ডিভের ভেতর ইনজেক্ট করে দেওয়া হয়।
+      </p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="relative pl-12 group">
+      <div class="absolute left-0 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-orange-100 ring-4 ring-white text-orange-700 font-mono text-xs font-bold z-10 group-hover:scale-110 group-hover:bg-orange-200 transition-transform">3</div>
+      <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+        <i class="fa-solid fa-border-all text-orange-600 text-sm"></i> App.vue এর মেইন লেআউট সেটআপ
+      </h3>
+      <p class="text-slate-400 text-xs font-mono uppercase tracking-wider mt-0.5">The Layout Root</p>
+      <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+        এখন স্ক্রিনে <span class="bg-emerald-50 text-emerald-700 font-mono px-1.5 py-0.5 rounded text-xs border border-emerald-200 shadow-sm">App.vue</span> লোড হয়ে গেছে। এটি একটি গ্লোবাল লেআউট বা মেইন হোল্ডার শেল হিসেবে কাজ করে। এর ভেতরে সাধারণত আমরা দুটি মূল কম্পোনেন্ট জোন ডিফাইন করি:
+      </p>
+      <ul class="list-disc pl-5 mt-2 space-y-2 text-sm text-slate-600">
+        <li><span class="bg-emerald-50 text-emerald-700 font-mono px-1.5 py-0.5 rounded text-xs border border-emerald-200 shadow-sm">Sidebar.vue</span> Component: যা স্ক্রিনের একপাশে ফিক্সড হিসেবে রেন্ডার হয়।</li>
+        <li><span class="bg-slate-50 font-mono px-1.5 py-0.5 rounded text-xs border border-slate-200 shadow-sm"><span class="text-indigo-600">&lt;RouterView</span> <span class="text-indigo-600/80">/&gt;</span></span>: এটি একটি ডায়নামিক প্লেসহোল্ডার। ইউজার যখন যে পেজে যাবে, রাউটার সেই পেজের কন্টেন্ট এনে এই খালি প্লাগ পয়েন্টে রেন্ডার করবে।</li>
+      </ul>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="relative pl-12 group">
+      <div class="absolute left-0 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-yellow-100 ring-4 ring-white text-yellow-700 font-mono text-xs font-bold z-10 group-hover:scale-110 group-hover:bg-yellow-200 transition-transform">4</div>
+      <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+        <i class="fa-solid fa-link text-yellow-600 text-sm"></i> Sidebar এ RouterLink এর নেভিগেশন ট্রিপ
+      </h3>
+      <p class="text-slate-400 text-xs font-mono uppercase tracking-wider mt-0.5">The Navigation Trigger</p>
+      <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+        সাইডবারের ভেতরে আমরা <span class="bg-yellow-50 text-yellow-800 font-mono px-1.5 py-0.5 rounded text-xs border border-yellow-200 shadow-sm">lessons.js</span> ফাইল থেকে লুপ চালিয়ে প্রতিটি লেসনের জন্য আলাদা লিংক তৈরি করি। প্রথাগত HTML এর <span class="bg-slate-50 font-mono px-1.5 py-0.5 rounded text-xs border border-slate-200 shadow-sm"><span class="text-indigo-600">&lt;a</span> <span class="text-sky-600">href</span>=<span class="text-emerald-600">"..."</span><span class="text-indigo-600">&gt;</span></span> ট্যাগের পরিবর্তে আমরা ব্যবহার করি <span class="bg-slate-50 font-mono px-1.5 py-0.5 rounded text-xs border border-slate-200 shadow-sm"><span class="text-indigo-600">&lt;RouterLink</span> <span class="text-sky-600">:to</span>=<span class="text-emerald-600">"..."</span><span class="text-indigo-600">&gt;</span></span>। ইউজার যখন কোনো লিংকে ক্লিক করে, এটি ব্রাউজারকে সম্পূর্ণ পেজ রিফ্রেশ হতে দেয় না, সে কেবল ব্রাউজারের URL পাথটি পরিবর্তন করে দেয় (যেমন: <span class="bg-slate-100 text-slate-700 font-mono px-1.5 py-0.5 rounded text-xs border border-slate-300 shadow-sm">/lessons/what-is-dotnet</span>)।
+      </p>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="relative pl-12 group">
+      <div class="absolute left-0 top-0 flex h-6 w-6 items-center justify-center rounded-full bg-pink-100 ring-4 ring-white text-pink-700 font-mono text-xs font-bold z-10 group-hover:scale-110 group-hover:bg-pink-200 transition-transform">5</div>
+      <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+        <i class="fa-solid fa-file-invoice text-pink-600 text-sm"></i> RouterView ও Dynamic Content রেন্ডারিং
+      </h3>
+      <p class="text-slate-400 text-xs font-mono uppercase tracking-wider mt-0.5">The Final Destination</p>
+      <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+        URL বার পরিবর্তন হওয়া মাত্রই ব্যাকএন্ডে সজাগ হয়ে যায় <span class="bg-rose-50 text-rose-700 font-mono px-1.5 py-0.5 rounded text-xs border border-rose-200 shadow-sm">router/index.js</span>। সে তার ডিফাইন করা ম্যাপের সাথে বর্তমান URL মিলিয়ে দেখে। যখন সে দেখে যে এই প্যাটার্নের সাথে <span class="bg-emerald-50 text-emerald-700 font-mono px-1.5 py-0.5 rounded text-xs border border-emerald-200 shadow-sm">LessonPage.vue</span> কম্পোনেন্টটি অ্যাসাইন করা আছে, সে তৎক্ষণাৎ সেই কম্পোনেন্টটিকে ডেকে এনে <span class="bg-emerald-50 text-emerald-700 font-mono px-1.5 py-0.5 rounded text-xs border border-emerald-200 shadow-sm">App.vue</span>-এর ভেতরে থাকা <span class="bg-slate-50 font-mono px-1.5 py-0.5 rounded text-xs border border-slate-200 shadow-sm"><span class="text-indigo-600">&lt;RouterView</span> <span class="text-indigo-600/80">/&gt;</span></span>-এর জায়গায় সোয়াপ বা রিপ্লেস করে দেয়। <span class="bg-emerald-50 text-emerald-700 font-mono px-1.5 py-0.5 rounded text-xs border border-emerald-200 shadow-sm">LessonPage</span> তখন URL-এর ডাইনামিক <span class="bg-cyan-50 text-cyan-700 font-mono px-1.5 py-0.5 rounded text-xs border border-cyan-200 shadow-sm">:slug</span> প্যারামিটার রিড করে <span class="bg-yellow-50 text-yellow-800 font-mono px-1.5 py-0.5 rounded text-xs border border-yellow-200 shadow-sm">lessons.js</span> থেকে নির্দিষ্ট অবজেক্টটি ফিল্টার করে স্ক্রিনে শো করে।
+      </p>
+    </div>
+
   </div>
 
   <!-- Summary Alert/Quote Box -->
-  <div class="mt-10 p-5 bg-blue-50/50 rounded-2xl border border-blue-200/60 shadow-sm flex items-start gap-3">
-    <i class="fa-solid fa-circle-info text-blue-600 mt-1 text-lg"></i>
+  <div class="mt-10 p-5 bg-blue-50/50 rounded-2xl border border-blue-200/60 shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
+    <div class="mt-1 bg-blue-100 p-2 rounded-full">
+      <i class="fa-solid fa-code-branch text-blue-600 text-lg"></i>
+    </div>
     <div>
       <h4 class="text-sm font-bold text-blue-950 uppercase tracking-wide">Architectural Core Summary</h4>
-      <p class="text-slate-600 text-xs sm:text-sm mt-1 leading-relaxed">
-        সংক্ষেপে: <span class="bg-[#1e1e1e] text-[#98c379] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">index.html</span> এর ভেতর <span class="bg-[#1e1e1e] text-[#61afef] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">main.js</span> লোড হয় ──► <span class="bg-[#1e1e1e] text-[#61afef] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">main.js</span> রাউটার আর <span class="bg-[#1e1e1e] text-[#e5c07b] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">App.vue</span>-কে মাউন্ট করে ──► <span class="bg-[#1e1e1e] text-[#e5c07b] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800">App.vue</span> তার লেআউটে <span class="bg-[#1e1e1e] font-mono px-1.5 py-0.5 rounded text-xs border border-zinc-800"><span class="text-[#e06c75]">&lt;RouterView</span> <span class="text-[#e06c75]/80">/&gt;</span></span> হোল্ডার রাখে ──► ইউজার সাইডবারে ক্লিক করলে রাউটার URL রিড করে এবং ম্যাচিং ডাইনামিক পেজ কন্টেন্ট সেই প্লেসহোল্ডারে সোয়াপ করে দেয়।
+      <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+        সংক্ষেপে: <span class="bg-amber-50 text-amber-700 font-mono px-1.5 py-0.5 rounded text-xs border border-amber-200">index.html</span> এর ভেতর <span class="bg-blue-50 text-blue-700 font-mono px-1.5 py-0.5 rounded text-xs border border-blue-200">main.js</span> লোড হয় <span class="text-blue-400 mx-1">──►</span> <span class="bg-blue-50 text-blue-700 font-mono px-1.5 py-0.5 rounded text-xs border border-blue-200">main.js</span> রাউটার আর <span class="bg-emerald-50 text-emerald-700 font-mono px-1.5 py-0.5 rounded text-xs border border-emerald-200">App.vue</span>-কে মাউন্ট করে <span class="text-blue-400 mx-1">──►</span> <span class="bg-emerald-50 text-emerald-700 font-mono px-1.5 py-0.5 rounded text-xs border border-emerald-200">App.vue</span> তার লেআউটে <span class="bg-slate-50 font-mono px-1.5 py-0.5 rounded text-xs border border-slate-200"><span class="text-indigo-600">&lt;RouterView</span> <span class="text-indigo-600/80">/&gt;</span></span> হোল্ডার রাখে <span class="text-blue-400 mx-1">──►</span> ইউজার সাইডবারে ক্লিক করলে রাউটার URL রিড করে এবং ম্যাচিং ডাইনামিক পেজ কন্টেন্ট সেই প্লেসহোল্ডারে সোয়াপ করে দেয়।
       </p>
     </div>
   </div>
+</div>
 
 </div>
     `
