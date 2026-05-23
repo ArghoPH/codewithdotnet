@@ -23,8 +23,7 @@
                             <span
                                 class="relative inline-flex rounded-full h-2 w-2 bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,0.8)]"></span>
                         </span>
-
-                        Learn .NET for free with interactive lessons and projects
+                        Learn .NET for free with interactive lessons and projects!
                     </span>
                 </div>
 
