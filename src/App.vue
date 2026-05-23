@@ -1,7 +1,21 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { RouterView } from 'vue-router'
 import Sidebar from './components/Sidebar.vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const mainContent = ref(null)
+
+watch(route, () => {
+  if (mainContent.value) {
+    mainContent.value.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+})
 
 const isSidebarOpen = ref(false)
 </script>
@@ -21,7 +35,7 @@ const isSidebarOpen = ref(false)
     </aside>
 
     <!-- Main -->
-    <main class="flex-1 overflow-y-auto">
+    <main ref="mainContent" class="flex-1 overflow-y-auto">
 
       <!-- Mobile Navbar -->
       <div

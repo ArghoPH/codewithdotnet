@@ -111,7 +111,7 @@
 
             <div class="grid gap-6 md:grid-cols-3">
                 <!-- Card: Topic 1 -->
-                <div
+                <RouterLink to="/lessons/what-is-csharp"
                     class="group relative rounded-3xl border border-slate-200/70 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl hover:shadow-slate-100">
                     <div
                         class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 border border-blue-100/50 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-105 group-hover:rotate-3">
@@ -123,10 +123,10 @@
                         Deconstruct typed variables, logic control flow statements, data structures, and foundational
                         Object-Oriented Programming (OOP).
                     </p>
-                </div>
+                </RouterLink>
 
                 <!-- Card: Topic 2 -->
-                <div
+                <router-link to="/lessons/what-is-dotnet"
                     class="group relative rounded-3xl border border-slate-200/70 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-xl hover:shadow-slate-100">
                     <div
                         class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 border border-indigo-100/50 transition-all duration-300 group-hover:bg-indigo-600 group-hover:text-white group-hover:scale-105 group-hover:rotate-3">
@@ -138,7 +138,7 @@
                         Deep dive into underlying HTTP routing architectures, custom execution pipelines, middleware
                         chains, and RESTful API structures.
                     </p>
-                </div>
+                </router-link>
 
                 <!-- Card: Topic 3 -->
                 <div
