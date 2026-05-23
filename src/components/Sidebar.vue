@@ -10,9 +10,12 @@ const route = useRoute()
         <h1 class="text-2xl font-bold">
             CodeWithDotNet
         </h1>
+        <p class="mt-2 text-sm text-slate-400">
+            Learn .NET and C# for free with interactive lessons and projects.
+        </p>
 
         <p class="mt-2 text-sm text-slate-400">
-            Learn publicly 🚀
+            Developed by <a href="https://github.com/Argho" class="underline">Argho</a>
         </p>
 
         <nav class="mt-10 space-y-3">
