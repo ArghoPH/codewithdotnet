@@ -1,23 +1,26 @@
 <script setup>
 import { ref, watch } from 'vue'
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 import Sidebar from './components/Sidebar.vue'
-import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
+const isSidebarOpen = ref(false)
 const mainContent = ref(null)
 
-watch(route, () => {
-  if (mainContent.value) {
-    mainContent.value.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }
-})
+watch(
+  () => route.fullPath,
+  () => {
+    isSidebarOpen.value = false
 
-const isSidebarOpen = ref(false)
+    if (mainContent.value) {
+      mainContent.value.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
+    }
+  }
+)
 </script>
 
 <template>
