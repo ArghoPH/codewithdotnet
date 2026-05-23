@@ -216,4 +216,94 @@ Hello
 This entire process happens extremely fast behind the scenes.
     `,
     },
+
+
+    {
+        id: 4,
+        title: 'Making CodeWithDotNet Documentation',
+        slug: 'making-codewithdotnet-documentation',
+        category: 'Project Journey',
+        content: `
+Today I started building CodeWithDotNet as a documentation-style learning website.
+
+The main idea of this project is simple:
+
+I will learn .NET step by step and document everything publicly.
+
+This project is not only a website.
+It is also my learning journey, portfolio, and practice project.
+
+What I built today:
+
+• Created a Vue project
+• Installed Tailwind CSS
+• Set up Git and GitHub
+• Deployed the project with Vercel
+• Created a sidebar layout
+• Created a reusable Sidebar component
+• Set up Vue Router
+• Created dynamic lesson pages
+• Stored lesson data inside lessons.js
+
+Project structure:
+
+src/
+├── components/
+│   └── Sidebar.vue
+├── data/
+│   └── lessons.js
+├── pages/
+│   └── LessonPage.vue
+├── router/
+│   └── index.js
+├── assets/
+│   └── main.css
+├── App.vue
+└── main.js
+
+Important concepts I learned:
+
+1. Component
+
+A component is a small reusable part of the UI.
+
+Example:
+
+Sidebar.vue is a component.
+
+2. Router
+
+Vue Router helps create multiple pages without reloading the full website.
+
+Example:
+
+/lessons/what-is-dotnet
+
+3. Dynamic Lesson
+
+Instead of creating every lesson manually, I store lesson data in one file.
+
+Then the sidebar and lesson page use that data automatically.
+
+4. Data-driven UI
+
+The UI is generated from data.
+
+Example:
+
+When I add a new lesson inside lessons.js, it automatically appears in the sidebar.
+
+Why this project is important:
+
+• I will learn by building
+• I will document my progress
+• I will push updates to GitHub
+• I will make the project public
+• I will slowly turn it into a real documentation website
+
+Final goal:
+
+CodeWithDotNet will become a public learning platform where I document .NET, C#, ASP.NET Core, Web API, frontend development, and real projects.
+  `,
+    }
 ]
