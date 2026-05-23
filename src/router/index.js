@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import LessonPage from '@/pages/LessonPage.vue'
 
 const HomePage = {
   template: `
@@ -11,36 +12,8 @@ const HomePage = {
         CodeWithDotNet
       </h1>
 
-      <p class="mt-6 text-lg text-slate-600">
-        Learn .NET publicly with me, one commit at a time.
-      </p>
-    </div>
-  `,
-}
-
-const CSharpPage = {
-  template: `
-    <div>
-      <h1 class="text-5xl font-bold text-slate-900">
-        C#
-      </h1>
-
-      <p class="mt-6 text-lg text-slate-600">
-        C# is a modern programming language used with .NET.
-      </p>
-    </div>
-  `,
-}
-
-const DotNetPage = {
-  template: `
-    <div>
-      <h1 class="text-5xl font-bold text-slate-900">
-        .NET
-      </h1>
-
-      <p class="mt-6 text-lg text-slate-600">
-        .NET is a development platform by Microsoft.
+      <p class="mt-6 text-lg leading-8 text-slate-600">
+        Learn .NET publicly. Build consistently. Improve every day.
       </p>
     </div>
   `,
@@ -54,12 +27,8 @@ const router = createRouter({
       component: HomePage,
     },
     {
-      path: '/csharp',
-      component: CSharpPage,
-    },
-    {
-      path: '/dotnet',
-      component: DotNetPage,
+      path: '/lessons/:slug',
+      component: LessonPage,
     },
   ],
 })
