@@ -4,16 +4,18 @@ import Sidebar from './components/Sidebar.vue'
 </script>
 
 <template>
-  <div class="flex min-h-screen">
+  <div class="flex h-screen overflow-hidden">
 
-    <Sidebar />
+    <!-- Sidebar -->
+    <aside class="h-screen overflow-y-auto">
+      <Sidebar />
+    </aside>
 
-    <main class="flex-1 bg-slate-100 p-10">
-
-      <div class="max-w-4xl">
+    <!-- Main Content -->
+    <main class="flex-1 overflow-y-auto bg-slate-100 p-10">
+      <div class="mx-auto max-w-6xl">
         <RouterView />
       </div>
-
     </main>
 
   </div>

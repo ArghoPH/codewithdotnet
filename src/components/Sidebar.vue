@@ -6,7 +6,7 @@ const route = useRoute()
 </script>
 
 <template>
-    <aside class="w-64 bg-slate-900 p-6 text-white">
+    <aside class="h-screen w-64 bg-slate-900 p-6 text-white">
         <h1 class="text-2xl font-bold">
             CodeWithDotNet
         </h1>
