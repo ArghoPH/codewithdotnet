@@ -6,7 +6,7 @@
         </h1>
 
         <p class="mt-2 text-sm text-slate-400">
-            Learn publicly 🚀
+            Learn publicly available .NET codebases and projects, and get inspired to build your own!
         </p>
 
         <nav class="mt-10 space-y-3">
