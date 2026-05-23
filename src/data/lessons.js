@@ -1087,13 +1087,245 @@ export const lessons = [
       <p class="text-slate-600 text-sm leading-relaxed">Reusable navigation. অ্যাপের সমস্ত লিঙ্কগুলো ডাইনামিকালি এখানে শো করে।</p>
     </div>
 
-    <!-- Continue adding for 04-15 ... -->
-    <!-- (Added visually) -->
-    <div class="relative bg-white p-6 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 hover:scale-105 transition-transform duration-300 lg:col-span-3 border-l-4 border-l-indigo-500">
-      <div class="absolute -top-3 -left-3 bg-indigo-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">...</div>
-      <h3 class="text-xl font-bold text-slate-800 mt-2 mb-3">Modular Integration</h3>
-      <p class="text-slate-600 text-sm">বাকি ধাপগুলো (04-15) ডাটা ম্যানেজমেন্ট (lessons.js), রাউটিং ইঞ্জিন, এবং রিয়েক্টিভ ইউআই স্টেট (ref) এর মাধ্যমে অ্যাপটিকে পরিপূর্ণ করে তোলে।</p>
+        <!-- 04. lessons.js -->
+<div class="relative bg-white p-6 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 hover:scale-105 transition-transform duration-300 border-l-4 border-l-emerald-500">
+  <div class="absolute -top-3 -left-3 bg-emerald-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">04</div>
+
+  <h3 class="text-xl font-bold text-slate-800 mt-2 mb-3">
+    lessons.js (Data Layer)
+  </h3>
+
+  <p class="text-slate-600 text-sm leading-7">
+    lessons.js হলো আমাদের mini database। সব lesson এর title, slug, category, content এখানে store করা হয়।
+    Sidebar এই data loop করে links বানায় এবং LessonPage এই data থেকেই matching lesson render করে।
+  </p>
+
+  <div class="mt-4 rounded-xl bg-slate-950 p-4 text-xs text-cyan-300 font-mono overflow-x-auto">
+{
+  title: 'What is .NET?',
+  slug: 'what-is-dotnet',
+  content: '...'
+}
+  </div>
+</div>
+
+<!-- 05. Vue Router -->
+<div class="relative bg-white p-6 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 hover:scale-105 transition-transform duration-300 border-l-4 border-l-sky-500">
+  <div class="absolute -top-3 -left-3 bg-sky-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">05</div>
+
+  <h3 class="text-xl font-bold text-slate-800 mt-2 mb-3">
+    Vue Router (Navigation Engine)
+  </h3>
+
+  <p class="text-slate-600 text-sm leading-7">
+    Vue Router পুরো app এর route system control করে।
+    User কোন URL এ গেলে কোন page render হবে সেটা Vue Router decide করে।
+  </p>
+
+  <div class="mt-4 rounded-xl bg-slate-950 p-4 text-xs text-cyan-300 font-mono overflow-x-auto">
+/                  → HomePage
+/lessons/:slug    → LessonPage
+  </div>
+</div>
+
+<!-- 06. RouterLink -->
+<div class="relative bg-white p-6 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 hover:scale-105 transition-transform duration-300 border-l-4 border-l-orange-500">
+  <div class="absolute -top-3 -left-3 bg-orange-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">06</div>
+
+  <h3 class="text-xl font-bold text-slate-800 mt-2 mb-3">
+    RouterLink (SPA Navigation)
+  </h3>
+
+  <p class="text-slate-600 text-sm leading-7">
+    Sidebar এর ভিতরে RouterLink use করা হয়।
+    এটা normal anchor tag এর মতো page reload করে না।
+    Instead, Vue internally component change করে fast navigation দেয়।
+  </p>
+
+  <div class="mt-4 rounded-xl bg-slate-950 p-4 text-xs text-cyan-300 font-mono overflow-x-auto">
+&lt;RouterLink :to="/ lessons / $ { lesson.slug } "&gt;
+  {{ lesson.title }}
+&lt;/RouterLink&gt;
+  </div>
+</div>
+
+<!-- 07. RouterView -->
+<div class="relative bg-white p-6 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 hover:scale-105 transition-transform duration-300 border-l-4 border-l-pink-500">
+  <div class="absolute -top-3 -left-3 bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">07</div>
+
+  <h3 class="text-xl font-bold text-slate-800 mt-2 mb-3">
+    RouterView (Dynamic Injection Layer)
+  </h3>
+
+  <p class="text-slate-600 text-sm leading-7">
+    RouterView হলো dynamic placeholder।
+    Current URL অনুযায়ী Vue Router এখানে correct page inject করে।
+  </p>
+
+  <div class="mt-4 rounded-xl bg-slate-950 p-4 text-xs text-cyan-300 font-mono overflow-x-auto">
+&lt;RouterView /&gt;
+  </div>
+
+  <p class="mt-4 text-slate-500 text-xs leading-6">
+    Example:
+    <br>
+    / → HomePage render হয়
+    <br>
+    /lessons/what-is-dotnet → LessonPage render হয়
+  </p>
+</div>
+
+<!-- 08. LessonPage.vue -->
+<div class="relative bg-white p-6 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 hover:scale-105 transition-transform duration-300 border-l-4 border-l-rose-500">
+  <div class="absolute -top-3 -left-3 bg-rose-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">08</div>
+
+  <h3 class="text-xl font-bold text-slate-800 mt-2 mb-3">
+    LessonPage.vue (Dynamic Rendering)
+  </h3>
+
+  <p class="text-slate-600 text-sm leading-7">
+    LessonPage URL থেকে slug নেয় এবং lessons.js থেকে matching lesson খুঁজে browser এ render করে।
+  </p>
+
+  <div class="mt-4 rounded-xl bg-slate-950 p-4 text-xs text-cyan-300 font-mono overflow-x-auto">
+route.params.slug
+↓
+lessons.find(...)
+↓
+content render
+  </div>
+</div>
+
+<!-- 09. Reactive State -->
+<div class="relative bg-white p-6 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 hover:scale-105 transition-transform duration-300 border-l-4 border-l-violet-500">
+  <div class="absolute -top-3 -left-3 bg-violet-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">09</div>
+
+  <h3 class="text-xl font-bold text-slate-800 mt-2 mb-3">
+    Reactive State (ref)
+  </h3>
+
+  <p class="text-slate-600 text-sm leading-7">
+    Vue এর ref() ব্যবহার করে reactive state তৈরি করা হয়।
+    Value change হলে UI automatically update হয়।
+  </p>
+
+  <div class="mt-4 rounded-xl bg-slate-950 p-4 text-xs text-cyan-300 font-mono overflow-x-auto">
+const isSidebarOpen = ref(false)
+  </div>
+
+  <p class="mt-4 text-slate-500 text-xs leading-6">
+    Mobile sidebar open/close, dark mode, toggle system — এসব জায়গায় ref use হয়।
+  </p>
+</div>
+<!-- 10. Browser Rendering Journey -->
+<div class="relative bg-white p-8 rounded-3xl border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 lg:col-span-3 border-l-4 border-l-indigo-500 group">
+  
+  <!-- Number Badge -->
+  <div class="absolute -top-4 -left-4 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg ring-4 ring-white group-hover:bg-indigo-500 transition-colors">
+    10
+  </div>
+
+  <!-- Title -->
+  <h3 class="text-2xl font-extrabold text-slate-900 mt-2 mb-4 tracking-tight">
+    Full Browser Rendering Journey
+  </h3>
+
+  <!-- Description -->
+  <p class="text-slate-600 text-base leading-relaxed mb-8 max-w-4xl">
+    পুরো Vue app এর journey শুরু হয় browser থেকে। Browser প্রথমে <code class="text-orange-600 bg-orange-50 px-1.5 py-0.5 rounded font-mono text-sm">index.html</code> load করে। তারপর <code class="text-yellow-600 bg-yellow-50 px-1.5 py-0.5 rounded font-mono text-sm">main.js</code> Vue app start করে। <code class="text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded font-mono text-sm">App.vue</code> পুরো layout তৈরি করে। Sidebar lessons.js থেকে links render করে। User যখন RouterLink এ click করে, Vue Router URL match করে। এরপর RouterView এর ভিতরে LessonPage inject হয় এবং lessons.js থেকে matching content খুঁজে browser এ render করে।
+  </p>
+
+  <!-- Dark Mode Journey Flow Visualizer -->
+  <div class="rounded-2xl bg-[#0f172a] border border-slate-800 p-6 md:p-8 overflow-x-auto shadow-inner relative">
+    
+    <!-- Mac-style Window Controls -->
+    <div class="absolute top-4 left-4 flex gap-2">
+      <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+      <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+      <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
     </div>
+    
+    <!-- Code Flow Execution -->
+    <div class="font-mono text-sm md:text-base leading-loose mt-8">
+      
+      <!-- Step 1 -->
+      <div class="text-blue-400 font-bold flex items-center gap-2">
+        <span>🌐 Browser</span> 
+        <span class="text-slate-500 font-normal italic text-xs ml-4">// User visits the website</span>
+      </div>
+      <div class="text-slate-700 ml-4 py-0.5">│</div>
+    
+      
+      <!-- Step 2 -->
+      <div class="text-orange-400 font-semibold ml-4">
+        📄 index.html
+      </div>
+      
+      <div class="text-slate-600 ml-10 py-0.5">|</div>
+      
+      <!-- Step 3 -->
+      <div class="text-yellow-300 font-semibold ml-10 flex items-center gap-2">
+        <span>⚡ main.js</span>
+        <span class="text-slate-500 font-normal italic text-xs ml-4">// Vue Instance Initialized</span>
+      </div>
+   
+      <div class="text-slate-600 ml-16 py-0.5">↓</div>
+      
+      <!-- Step 4 -->
+      <div class="text-emerald-400 font-semibold ml-16 flex items-center gap-2">
+        <span>🧩 App.vue</span>
+        <span class="text-slate-500 font-normal italic text-xs ml-4">// Root Layout Mounts</span>
+      </div>
+      
+      <div class="text-slate-600 ml-24 py-0.5">↓</div>
+      
+      <!-- Step 5 -->
+      <div class="ml-24 flex items-center gap-3">
+        <span class="text-emerald-300 bg-emerald-900/30 px-2 py-0.5 rounded border border-emerald-800/50">Sidebar.vue</span> 
+        <span class="text-slate-500">+</span> 
+        <span class="text-indigo-400 bg-indigo-900/30 px-2 py-0.5 rounded border border-indigo-800/50">&lt;RouterView /&gt;</span>
+      </div>
+      
+      <div class="text-slate-600 ml-32 py-0.5">↓</div>
+      
+      <!-- Step 6 -->
+      <div class="text-pink-400 ml-32 font-medium flex items-center gap-2">
+        <span>🖱️ RouterLink Click</span>
+        <span class="text-slate-500 font-normal italic text-xs ml-4">// User Action Triggered</span>
+      </div>
+      
+      <div class="text-slate-600 ml-40 py-0.5">↓</div>
+      
+      <!-- Step 7 -->
+      <div class="text-cyan-400 ml-40 font-medium">
+        🛣️ Vue Router Matches URL
+      </div>
+      
+      <div class="text-slate-600 ml-48 py-0.5">↓</div>
+      
+      <!-- Step 8 -->
+      <div class="text-emerald-400 font-semibold ml-48">
+        📄 LessonPage.vue
+      </div>
+      
+      <div class="text-slate-600 ml-56 py-0.5">↓</div>
+      
+      <!-- Step 9 -->
+      <div class="text-yellow-300 ml-56 flex items-center gap-2">
+        <span>📦 lessons.js</span>
+        <span class="text-slate-500 font-normal italic text-xs ml-4">// Fetches matching data</span>
+      </div>
+      
+      <div class="text-slate-600 ml-64 py-0.5">↓</div>
+      
+      <!-- Step 10 -->
+      <div class="text-blue-400 font-bold ml-64 px-4 py-2 bg-blue-900/20 border border-blue-500/30 rounded-lg inline-block shadow-[0_0_15px_rgba(59,130,246,0.15)]">
+        ✨ Final Browser Render
+      </div>
+
+    </div>
+  </div>
+</div>
 
   </div>
 
