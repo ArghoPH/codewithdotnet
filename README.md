@@ -1,38 +1,81 @@
-# codewithdotnet
+# CodeWithDotNet
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern learning platform for .NET and frontend development.
 
-## Recommended IDE Setup
+## 🚀 Tech Stack
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue 3
+- Tailwind CSS
+- Vue Router
+- Vite
 
-## Recommended Browser Setup
+---
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 📚 About
 
-## Customize configuration
+CodeWithDotNet is my public learning journey where I document everything I learn about:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- .NET
+- C#
+- ASP.NET Core
+- Web API
+- Frontend Development
+- Real Projects
 
-## Project Setup
+---
 
-```sh
-npm install
+## ✨ Features
+
+- Documentation-style UI
+- Sidebar navigation
+- Lesson pages
+- Responsive layout
+- Clean modern design
+
+---
+
+## 🎯 Goal
+
+Learn publicly.
+Build consistently.
+Improve every day.
+
+---
+
+## 🌐 Live Website
+
+https://codewithdotnet.vercel.app/
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+├── components/
+├── pages/
+├── router/
+├── assets/
+└── App.vue
 ```
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
+## 🛠 Setup
+
+```bash
+npm install
 npm run dev
 ```
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 📌 Status
+
+🚧 Currently under development
+
+---
+
+## 👨‍💻 Author
+
+Built by Argho Chakma
