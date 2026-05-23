@@ -19,7 +19,7 @@
                         class="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/60 px-5 py-2 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md">
                         <span
                             class="flex h-2.5 w-2.5 rounded-full bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,0.8)]"></span>
-                        Learn .NET publicly 🚀
+                        Learn .NET for free with interactive lessons and projects
                     </span>
                 </div>
 
