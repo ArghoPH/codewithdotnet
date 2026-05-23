@@ -37,7 +37,7 @@ const isSidebarOpen = ref(false)
       </div>
 
       <!-- Content -->
-      <div class="p-5 lg:p-10">
+      <div class="lg:p-10">
         <div class="mx-auto max-w-6xl">
           <RouterView />
         </div>

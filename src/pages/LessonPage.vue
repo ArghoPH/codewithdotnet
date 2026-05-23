@@ -13,7 +13,7 @@ const lesson = computed(() => {
 </script>
 
 <template>
-    <article v-if="lesson" class="mx-auto max-w-4xl">
+    <article v-if="lesson" class="mx-auto max-w-6xl">
         <!-- Header -->
         <div class="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
             <p class="inline-flex rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-600">
@@ -44,7 +44,7 @@ const lesson = computed(() => {
                 </p>
 
                 <h3 class="mt-1 text-xl font-bold">
-                    Keep learning step by step 🚀
+                    Keep learning step by step
                 </h3>
             </div>
 

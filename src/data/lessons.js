@@ -5,7 +5,7 @@ export const lessons = [
         slug: 'what-is-dotnet',
         category: '.NET Basics',
         content: `
-<div class="github-readme font-sans text-slate-800 max-w-3xl mx-auto leading-relaxed p-5">
+<div class="github-readme font-sans text-slate-800 max-w-5xl mx-auto leading-relaxed p-5">
 
   <!-- Header Section -->
   <div class="mb-8 p-6 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 rounded-xl text-white shadow-md relative overflow-hidden">
@@ -179,10 +179,10 @@ export const lessons = [
 
   <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
   <!-- Section: Flow & Code Example -->
-  <section class="grid gap-4 lg:grid-cols-1">
+  <section class="grid gap-4 lg:grid-cols-1 max-w-3xl mx-auto">
     <!-- Architecture Flow (Terminal Style) -->
     <div class="space-y-4">
-      <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2"> Simple .NET Flow</h3>
+      <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2 justify-center"> Simple .NET Flow</h3>
       <div class="overflow-hidden rounded-2xl bg-slate-950 shadow-xl ring-1 ring-slate-800">
         <div class="flex items-center gap-2 border-b border-white/10 bg-white/5 px-4 py-3">
           <div class="h-3 w-3 rounded-full bg-red-500/80"></div>
@@ -204,7 +204,7 @@ export const lessons = [
 
     <!-- Code Block -->
     <div class="space-y-4">
-      <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2"> Example .NET Code</h3>
+      <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2 justify-center"> Example .NET Code</h3>
       <div class="overflow-hidden rounded-2xl bg-slate-950 shadow-xl ring-1 ring-slate-800">
         <div class="flex items-center gap-2 border-b border-white/10 bg-white/5 px-4 py-3">
           <div class="h-3 w-3 rounded-full bg-red-500/80"></div>
@@ -222,16 +222,32 @@ export const lessons = [
   </section>
 
   <hr style="height: 0.25em; padding: 0; margin: 24px 0; background-color: #d0d7de; border: 0;">
+
 <!-- Section: Final Summary -->
-  <h2 class="pb-1 text-2xl font-bold mt-10 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
-    <i class="fa-solid fa-flag-checkered text-emerald-600"></i> Final Summary
-  </h2>
-  <p class="mt-0 mb-4 text-base text-slate-600">
-    <span class="text-emerald-600 font-bold">.NET</span> is a powerful ecosystem for building modern applications. It helps developers create <em>web apps, APIs, mobile apps, desktop software, and cloud systems</em> using a highly optimized stack:
-  </p>
-  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg font-mono text-sm text-slate-700 font-semibold inline-block mb-6">
-    <i class="fa-solid fa-layer-group text-blue-500 mr-1.5"></i> C# + ASP.NET Core + Databases + Cloud Technologies
+  <div class="my-8 p-6 bg-gradient-to-br from-emerald-950/20 via-slate-50 to-emerald-950/10 rounded-xl border border-emerald-500/20 shadow-sm relative overflow-hidden">
+    <div class="absolute right-4 bottom-2 opacity-5 text-8xl text-emerald-900"><i class="fa-solid fa-flag-checkered"></i></div>
+    
+    <h2 class="text-xl font-bold text-slate-950 flex items-center gap-2 mb-3">
+      <i class="fa-solid fa-circle-check text-emerald-600"></i> Architectural Synthesis
+    </h2>
+    
+    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+      <strong class="text-emerald-700 font-semibold">.NET</strong> is engineered as a highly optimized, cross-platform ecosystem designed to power high-scale modern application runtimes. By leveraging an integrated toolkit, it enables seamless development across distributed topologies, empowering creators to build robust web applications, enterprise APIs, native mobile platforms, desktop solutions, and cloud-native systems using a unified stack:
+    </p>
+
+    <!-- Highlighted Technology Matrix Layer -->
+    <div class="flex flex-wrap items-center gap-2 font-mono text-xs font-bold pt-1">
+      <span class="px-3 py-1.5 bg-blue-50 text-blue-700 border border-blue-200/60 rounded-md shadow-sm">C# Core</span>
+      <span class="text-slate-400 font-normal"><i class="fa-solid fa-plus text-[10px]"></i></span>
+      <span class="px-3 py-1.5 bg-red-50 text-red-700 border border-red-200/60 rounded-md shadow-sm">ASP.NET Core</span>
+      <span class="text-slate-400 font-normal"><i class="fa-solid fa-plus text-[10px]"></i></span>
+      <span class="px-3 py-1.5 bg-orange-50 text-orange-700 border border-orange-200/60 rounded-md shadow-sm">Persistent DBs</span>
+      <span class="text-slate-400 font-normal"><i class="fa-solid fa-plus text-[10px]"></i></span>
+      <span class="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200/60 rounded-md shadow-sm">Cloud Infrastructures</span>
+    </div>
   </div>
+
+</div>
 
   <hr class="h-1 p-0 my-8 bg-slate-200 border-0">
 
@@ -278,27 +294,138 @@ export const lessons = [
 
   <hr class="h-1 p-0 my-8 bg-slate-200 border-0">
 
-  <!-- Section: Next Steps Roadmap -->
-  <section class="rounded-xl bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950 p-6 text-white shadow-lg mt-8 border border-slate-800">
-    <div class="max-w-3xl space-y-4">
-      <h2 class="text-2xl font-bold tracking-tight flex items-center gap-2">
-        <i class="fa-solid fa-map-signs text-indigo-400"></i> Your Next Steps Roadmap
-      </h2>
-      <p class="text-slate-300 text-sm leading-relaxed">
-        After understanding the high-level architecture of .NET, here is the chronological learning path highly recommended for developers to build production-grade applications:
-      </p>
+<!-- Section: Infographic Roadmap -->
+  <section class="mt-12 space-y-6">
+    <h2 class="flex items-center gap-2.5 text-2xl font-bold tracking-tight text-slate-900">
+      <i class="fa-solid fa-map-location-dot text-indigo-600"></i> .NET Learning Roadmap
+    </h2>
+    <p class="text-sm sm:text-base text-slate-600">
+      A structured, end-to-end industrial learning roadmap designed to transform conceptual syntax familiarity into professional production-grade system architecture capability.
+    </p>
+
+    <!-- Infographic Timeline Container -->
+    <div class="relative pl-6 sm:pl-8 space-y-6 before:absolute before:bottom-2 before:left-[11px] before:top-2 before:w-0.5 before:bg-gradient-to-b before:from-indigo-500 before:via-blue-500 before:to-emerald-500">
       
-      <div class="grid grid-cols-2 gap-2.5 sm:grid-cols-3 md:grid-cols-4 font-mono text-xs text-center pt-2">
-        <div class="bg-white/5 p-2.5 rounded-lg border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">1. C# Core</div>
-        <div class="bg-white/5 p-2.5 rounded-lg border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">2. ASP.NET Core</div>
-        <div class="bg-white/5 p-2.5 rounded-lg border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">3. Web API</div>
-        <div class="bg-white/5 p-2.5 rounded-lg border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">4. EF Core</div>
-        <div class="bg-white/5 p-2.5 rounded-lg border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">5. Auth & Identity</div>
-        <div class="bg-white/5 p-2.5 rounded-lg border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">6. SQL Server</div>
-        <div class="bg-white/5 p-2.5 rounded-lg border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors col-span-2 sm:col-span-1 md:col-span-2">7. CI/CD & Deploy</div>
+      <!-- Step 1 -->
+      <div class="relative group">
+        <!-- Timeline Dot Indicator -->
+        <div class="absolute -left-[23px] sm:-left-[27px] top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-white ring-4 ring-indigo-500 transition-all duration-300 group-hover:scale-110 group-hover:bg-indigo-500">
+          <div class="h-1.5 w-1.5 rounded-full bg-indigo-500 transition-colors duration-300 group-hover:bg-white"></div>
+        </div>
+        <!-- Roadmap Card -->
+        <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:border-indigo-200 hover:shadow-md">
+          <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded">Phase 01</span>
+          <h3 class="mt-1 text-base font-bold text-slate-900 flex items-center gap-1.5">
+            <i class="fa-solid fa-code text-indigo-500"></i> C# Core Foundations & OOP
+          </h3>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Master Object-Oriented Programming (OOP), memory management (Stack/Heap), generics, delegates, and unified data streaming syntax using advanced LINQ queries.
+          </p>
+        </div>
       </div>
+
+      <!-- Step 2 -->
+      <div class="relative group">
+        <div class="absolute -left-[23px] sm:-left-[27px] top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-white ring-4 ring-indigo-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-indigo-400">
+          <div class="h-1.5 w-1.5 rounded-full bg-indigo-400 transition-colors duration-300 group-hover:bg-white"></div>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:border-indigo-200 hover:shadow-md">
+          <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-indigo-500 bg-indigo-50 px-2 py-0.5 rounded">Phase 02</span>
+          <h3 class="mt-1 text-base font-bold text-slate-900 flex items-center gap-1.5">
+            <i class="fa-solid fa-cubes text-indigo-400"></i> ASP.NET Core Engine Architecture
+          </h3>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Deep dive into HTTP pipelines, custom middleware orchestration, built-in IoC Container configurations, and strict dependency injection lifecycles (Transient, Scoped, Singleton).
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative group">
+        <div class="absolute -left-[23px] sm:-left-[27px] top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-white ring-4 ring-blue-500 transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-500">
+          <div class="h-1.5 w-1.5 rounded-full bg-blue-500 transition-colors duration-300 group-hover:bg-white"></div>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:border-blue-200 hover:shadow-md">
+          <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded">Phase 03</span>
+          <h3 class="mt-1 text-base font-bold text-slate-900 flex items-center gap-1.5">
+            <i class="fa-solid fa-cloud-arrow-up text-blue-500"></i> High-Scale RESTful Web APIs
+          </h3>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Construct standard industry controllers, configure routing structures, leverage clean Data Transfer Objects (DTOs), and implement explicit global exception filters.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="relative group">
+        <div class="absolute -left-[23px] sm:-left-[27px] top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-white ring-4 ring-blue-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-400">
+          <div class="h-1.5 w-1.5 rounded-full bg-blue-400 transition-colors duration-300 group-hover:bg-white"></div>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:border-blue-200 hover:shadow-md">
+          <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-blue-500 bg-blue-50 px-2 py-0.5 rounded">Phase 04</span>
+          <h3 class="mt-1 text-base font-bold text-slate-900 flex items-center gap-1.5">
+            <i class="fa-solid fa-database text-blue-400"></i> Enterprise Data Layer with EF Core
+          </h3>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Manage database state decoupling using robust ORM patterns, configure multi-tier entity relations via Fluent API, execute schema migrations, and prevent performance leaks like N+1 queries.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="relative group">
+        <div class="absolute -left-[23px] sm:-left-[27px] top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-white ring-4 ring-emerald-500 transition-all duration-300 group-hover:scale-110 group-hover:bg-emerald-500">
+          <div class="h-1.5 w-1.5 rounded-full bg-emerald-500 transition-colors duration-300 group-hover:bg-white"></div>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:border-emerald-200 hover:shadow-md">
+          <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Phase 05</span>
+          <h3 class="mt-1 text-base font-bold text-slate-900 flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved text-emerald-500"></i> Cryptographic Auth & Identity
+          </h3>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Isolate system vectors using stateless JSON Web Token (JWT) Bearer validations, map comprehensive claims, and setup secure Role-Based Access Control (RBAC).
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="relative group">
+        <div class="absolute -left-[23px] sm:-left-[27px] top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-white ring-4 ring-emerald-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-emerald-400">
+          <div class="h-1.5 w-1.5 rounded-full bg-emerald-400 transition-colors duration-300 group-hover:bg-white"></div>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:border-emerald-200 hover:shadow-md">
+          <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-500 bg-emerald-50 px-2 py-0.5 rounded">Phase 06</span>
+          <h3 class="mt-1 text-base font-bold text-slate-900 flex items-center gap-1.5">
+            <i class="fa-solid fa-server text-emerald-400"></i> SQL Server Engine Tuning
+          </h3>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Ensure transactional atomicity and speed through relational architecture designs, optimal database clustering/non-clustered indexing, and pre-compiled Stored Procedures.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 7 -->
+      <div class="relative group">
+        <div class="absolute -left-[23px] sm:-left-[27px] top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-white ring-4 ring-teal-500 transition-all duration-300 group-hover:scale-110 group-hover:bg-teal-500">
+          <div class="h-1.5 w-1.5 rounded-full bg-teal-500 transition-colors duration-300 group-hover:bg-white"></div>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:border-teal-200 hover:shadow-md">
+          <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-2 py-0.5 rounded">Phase 07</span>
+          <h3 class="mt-1 text-base font-bold text-slate-900 flex items-center gap-1.5">
+            <i class="fa-solid fa-infinity text-teal-500"></i> Containerized CI/CD & Cloud Deployment
+          </h3>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Encapsulate scalable runtimes inside specialized Docker multi-stage images, map deployment steps via automated GitHub Actions engines, and orchestrate clouds or standard Windows IIS hostings.
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
+
+</div>
+
+</div>
 
 </div>
 
@@ -311,7 +438,7 @@ export const lessons = [
         slug: 'what-is-csharp',
         category: 'C# Basics',
         content: `
-<div class="github-readme font-sans text-slate-800 max-w-3xl mx-auto leading-relaxed p-5">
+<div class="github-readme font-sans text-slate-800 max-w-5xl mx-auto leading-relaxed p-5">
 
   <!-- Section: Introduction -->
   <h3 class="mt-6 mb-4 font-semibold text-xl flex items-center gap-2">
@@ -410,7 +537,7 @@ export const lessons = [
         slug: 'dotnet-code-journey',
         category: '.NET Basics',
         content: `
-<div class="github-readme font-sans text-slate-800 max-w-3xl mx-auto leading-relaxed p-5">
+<div class="github-readme font-sans text-slate-800 max-w-5xl mx-auto leading-relaxed p-5">
 
   <!-- Main Section: The C# Code Execution Journey -->
   <h2 class="pb-2 text-2xl font-bold mt-6 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
@@ -587,7 +714,7 @@ export const lessons = [
         slug: 'codewithdotnet-documentation',
         category: 'Project Journey',
         content: `
-<div class="github-readme font-sans text-slate-800 max-w-3xl mx-auto leading-relaxed p-5">
+<div class="github-readme font-sans text-slate-800 mx-auto leading-relaxed p-5">
 
   <!-- Header Section -->
   <div class="mb-8 p-6 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-xl text-white shadow-md relative overflow-hidden">
@@ -623,7 +750,7 @@ export const lessons = [
   <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
 
   <!-- Tech Stack & Setup -->
-  <div class="github-readme font-sans text-slate-800 max-w-3xl mx-auto leading-relaxed p-5">
+  <div class="github-readme font-sans text-slate-800 max-w-5xl mx-auto leading-relaxed p-5">
 
   <!-- Section: Architecture & Pipeline -->
   <h2 class="pb-2 text-2xl font-bold mt-6 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
@@ -824,6 +951,90 @@ export const lessons = [
     <div class="bg-amber-50 border-l-4 border-l-amber-500 p-4 my-3 ml-6 rounded-r-md text-xs text-amber-900">
       <strong>The Automation Payoff:</strong> Adding a new item to the object array instantly populates the Sidebar navigation and sets up a dynamic listener route automatically without touching route view templates.
     </div>
+  </div>
+
+  <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
+
+  <!-- Section: Implementation Architecture (App.vue) -->
+  <h2 class="pb-1 text-2xl font-bold mt-10 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
+    <i class="fa-solid fa-code-branch text-blue-600"></i> Layout Implementation: <code>App.vue</code>
+  </h2>
+  <p class="mt-0 mb-4 text-base text-slate-600">
+    The conceptual responsive workflow discussed above is fully orchestrated via declarative bindings inside the main entry layout component. Here is the concrete implementation architecture of <strong>CodeWithDotNet</strong>:
+  </p>
+
+  <!-- VS Code Styled Full Code Block -->
+  <div class="my-4 shadow-md rounded-md overflow-hidden border border-[#2d2d2d]">
+    <!-- Top Window Bar for Design -->
+    <div class="bg-[#2d2d2d] px-4 py-2 flex items-center justify-between text-xs font-mono text-[#neutral-400]">
+      <span class="text-slate-400 flex items-center gap-1.5"><i class="fa-regular fa-file-code text-emerald-500"></i> App.vue</span>
+      <span class="text-slate-500">Vue 3 Composition API</span>
+    </div>
+    
+    <pre class="p-4 overflow-x-auto text-xs sm:text-sm leading-normal bg-[#1e1e1e] font-mono text-[#d4d4d4] max-h-[450px] overflow-y-auto"><code><span class="text-[#569cd6]">&lt;script</span> <span class="text-[#9cdcfe]">setup</span><span class="text-[#569cd6]">&gt;</span>
+<span class="text-[#569cd6]">import</span> { <span class="text-[#9cdcfe]">ref</span> } <span class="text-[#569cd6]">from</span> <span class="text-[#ce9178]">'vue'</span>
+<span class="text-[#569cd6]">import</span> { <span class="text-[#9cdcfe]">RouterView</span> } <span class="text-[#569cd6]">from</span> <span class="text-[#ce9178]">'vue-router'</span>
+<span class="text-[#569cd6]">import</span> <span class="text-[#9cdcfe]">Sidebar</span> <span class="text-[#569cd6]">from</span> <span class="text-[#ce9178]">'./components/Sidebar.vue'</span>
+
+<span class="text-[#569cd6]">const</span> <span class="text-[#9cdcfe]">isSidebarOpen</span> = <span class="text-[#dcdcaa]">ref</span>(<span class="text-[#569cd6]">false</span>)
+<span class="text-[#569cd6]">&lt;/script&gt;</span>
+
+<span class="text-[#569cd6]">&lt;template&gt;</span>
+  <span class="text-[#569cd6]">&lt;div</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"flex h-screen overflow-hidden bg-slate-100"</span><span class="text-[#569cd6]">&gt;</span>
+
+    <span class="text-[#6a9955]">&lt;!-- Mobile Overlay Backdrop --&gt;</span>
+    <span class="text-[#569cd6]">&lt;div</span> 
+      <span class="text-[#9cdcfe]">v-if</span>=<span class="text-[#ce9178]">"isSidebarOpen"</span> 
+      <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"fixed inset-0 z-40 bg-black/50 lg:hidden"</span> 
+      <span class="text-[#4ec9b0]">@click</span>=<span class="text-[#9cdcfe]">"isSidebarOpen = <span class="text-[#569cd6]">false</span>"</span>
+    <span class="text-[#569cd6]">&gt;&lt;/div&gt;</span>
+
+    <span class="text-[#6a9955]">&lt;!-- Drawer Sidebar Panel --&gt;</span>
+    <span class="text-[#569cd6]">&lt;aside</span> <span class="text-[#4ec9b0]">:class</span>=<span class="text-[#ce9178]">"[
+      'fixed left-0 top-0 z-50 h-screen w-72 transform overflow-y-auto transition-transform duration-300 lg:static lg:translate-x-0',
+      isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+    ]"</span><span class="text-[#569cd6]">&gt;</span>
+      <span class="text-[#569cd6]">&lt;Sidebar</span> <span class="text-[#569cd6]">/&gt;</span>
+    <span class="text-[#569cd6]">&lt;/aside&gt;</span>
+
+    <span class="text-[#6a9955]">&lt;!-- Main Content Viewport Portals --&gt;</span>
+    <span class="text-[#569cd6]">&lt;main</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"flex-1 overflow-y-auto"</span><span class="text-[#569cd6]">&gt;</span>
+
+      <span class="text-[#6a9955]">&lt;!-- Responsive Mobile Header (Hidden on Desktop viewports) --&gt;</span>
+      <span class="text-[#569cd6]">&lt;div</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"sticky top-0 z-30 flex items-center justify-between border-b border-slate-200 bg-white px-5 py-4 lg:hidden"</span><span class="text-[#569cd6]">&gt;</span>
+        <span class="text-[#569cd6]">&lt;button</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"flex h-11 w-11 items-center justify-center rounded-xl bg-slate-900 text-white"</span> <span class="text-[#4ec9b0]">@click</span>=<span class="text-[#9cdcfe]">"isSidebarOpen = <span class="text-[#569cd6]">true</span>"</span><span class="text-[#569cd6]">&gt;</span>
+          <span class="text-[#569cd6]">&lt;i</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"fa-solid fa-bars"</span><span class="text-[#569cd6]">&gt;&lt;/i&gt;</span>
+        <span class="text-[#569cd6]">&lt;/button&gt;</span>
+        <span class="text-[#569cd6]">&lt;h1</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"text-lg font-bold text-slate-900"</span><span class="text-[#569cd6]">&gt;</span>CodeWithDotNet<span class="text-[#569cd6]">&lt;/h1&gt;</span>
+      <span class="text-[#569cd6]">&lt;/div&gt;</span>
+
+      <span class="text-[#6a9955]">&lt;!-- Dynamic Injection View Node --&gt;</span>
+      <span class="text-[#569cd6]">&lt;div</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"p-5 lg:p-10"</span><span class="text-[#569cd6]">&gt;</span>
+        <span class="text-[#569cd6]">&lt;div</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"mx-auto max-w-6xl"</span><span class="text-[#569cd6]">&gt;</span>
+          <span class="text-[#4ec9b0]">&lt;RouterView</span> <span class="text-[#569cd6]">/&gt;</span>
+        <span class="text-[#569cd6]">&lt;/div&gt;</span>
+      <span class="text-[#569cd6]">&lt;/div&gt;</span>
+
+    <span class="text-[#569cd6]">&lt;/main&gt;</span>
+  <span class="text-[#569cd6]">&lt;/div&gt;</span>
+<span class="text-[#569cd6]">&lt;/template&gt;</span></code></pre>
+  </div>
+
+  <!-- Code Metrics / Key Takeaways -->
+  <div class="mt-4 border border-slate-200 rounded-xl bg-white p-4">
+    <h4 class="text-sm font-semibold text-slate-900 flex items-center gap-1.5 mb-2">
+      <i class="fa-solid fa-square-poll-horizontal text-indigo-500"></i> Code Architecture Highlights:
+    </h4>
+    <ul class="pl-5 list-none space-y-1.5 text-xs sm:text-sm text-slate-600">
+      <li class="flex items-start gap-2">
+        <i class="fa-solid fa-caret-right text-indigo-500 mt-1"></i>
+        <div><strong>Dynamic Array Bindings:</strong> Tailwind's classes are evaluated inside an array matrix (<code>:class="[...]"</code>), allowing modern conditional toggles based on the reactive state of <code>isSidebarOpen</code>.</div>
+      </li>
+      <li class="flex items-start gap-2">
+        <i class="fa-solid fa-caret-right text-indigo-500 mt-1"></i>
+        <div><strong>Screen Space Separation (<code>lg:static</code>):</strong> The layout completely shifts behavior at the <code>1024px</code> grid mark (Large Viewports). On desktop screens, mobile overrides like translation modifications are completely bypassed, locking the navigation natively into the application container layout.</div>
+      </li>
+    </ul>
   </div>
 
   <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
