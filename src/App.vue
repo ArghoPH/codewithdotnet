@@ -48,9 +48,11 @@ watch(
           <i class="fa-solid fa-bars"></i>
         </button>
 
-        <h1 class="text-lg font-bold text-slate-900">
-          CodeWithDotNet
-        </h1>
+        <RouterLink to="/">
+          <h1 class="text-lg font-bold text-slate-900">
+            CodeWithDotNet
+          </h1>
+        </RouterLink>
       </div>
 
       <!-- Content -->
