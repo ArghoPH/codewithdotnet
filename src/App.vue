@@ -5,6 +5,7 @@
     <aside class="w-64 bg-slate-900 text-white p-6">
 
       <h1 class="text-2xl font-bold">
+        <i class="fa-solid fa-code mr-2"></i>
         CodeWithDotNet
       </h1>
 
@@ -14,24 +15,16 @@
 
       <nav class="mt-10 space-y-3">
 
-        <a
-          href="#"
-          class="block rounded-lg bg-slate-800 px-4 py-3"
-        >
-          .NET Basics
+        <a href="#" class="flex items-center gap-3 rounded-lg px-4 py-3 hover:bg-slate-800">
+          <i class="fa-solid fa-book"></i>
+          <span>.NET Basics</span>
         </a>
 
-        <a
-          href="#"
-          class="block rounded-lg px-4 py-3 hover:bg-slate-800"
-        >
+        <a href="#" class="block rounded-lg px-4 py-3 hover:bg-slate-800">
           C#
         </a>
 
-        <a
-          href="#"
-          class="block rounded-lg px-4 py-3 hover:bg-slate-800"
-        >
+        <a href="#" class="block rounded-lg px-4 py-3 hover:bg-slate-800">
           ASP.NET Core
         </a>
 
@@ -53,7 +46,8 @@
         </h1>
 
         <p class="mt-6 text-lg leading-8 text-slate-600">
-          This is my public learning journey where I document everything I learn about .NET, C#, ASP.NET Core, frontend development and real-world projects.
+          This is my public learning journey where I document everything I learn about .NET, C#, ASP.NET Core, frontend
+          development and real-world projects.
         </p>
 
         <div class="mt-10 grid gap-5 md:grid-cols-3">
