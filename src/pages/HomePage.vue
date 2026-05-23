@@ -23,7 +23,7 @@
                             <span
                                 class="relative inline-flex rounded-full h-2 w-2 bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,0.8)]"></span>
                         </span>
-                        <i class="fa-solid fa-graduation-cap text-blue-500"></i>
+
                         Learn .NET for free with interactive lessons and projects
                     </span>
                 </div>
