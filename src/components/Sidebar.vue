@@ -11,17 +11,17 @@
 
         <nav class="mt-10 space-y-3">
 
-            <a href="#" class="block rounded-lg bg-slate-800 px-4 py-3">
-                .NET Basics
-            </a>
+            <RouterLink to="/" class="block rounded-lg bg-slate-800 px-4 py-3">
+                Home
+            </RouterLink>
 
-            <a href="#" class="block rounded-lg px-4 py-3 hover:bg-slate-800">
+            <RouterLink to="/csharp" class="block rounded-lg px-4 py-3 hover:bg-slate-800">
                 C#
-            </a>
+            </RouterLink>
 
-            <a href="#" class="block rounded-lg px-4 py-3 hover:bg-slate-800">
-                ASP.NET Core
-            </a>
+            <RouterLink to="/dotnet" class="block rounded-lg px-4 py-3 hover:bg-slate-800">
+                .NET
+            </RouterLink>
 
         </nav>
 
