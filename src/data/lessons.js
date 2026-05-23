@@ -428,9 +428,9 @@ export const lessons = [
         content: `
 <div class="github-readme font-sans text-slate-800 max-w-5xl mx-auto leading-relaxed p-5">
   <!-- Section: Introduction -->
-  <h3 class="mt-6 mb-4 font-semibold text-xl flex items-center gap-2">
+  <h2 class="pb-1 text-2xl font-semibold mt-6 mb-4 border-b border-slate-200 flex items-center gap-2">
     <i class="fa-solid fa-terminal text-blue-600"></i> Introduction
-  </h3>
+  </h2>
   <p class="mt-0 mb-4 text-base">
     <span class="text-blue-600 font-semibold">C#</span> (pronounced C Sharp) is a modern, object-oriented programming language developed by Microsoft.
   </p>

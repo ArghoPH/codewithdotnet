@@ -20,8 +20,8 @@ const lesson = computed(() => {
             class="mb-8 p-6 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 rounded-xl text-white shadow-md relative overflow-hidden">
             <div class="absolute right-4 top-4 opacity-10 text-7xl"><i class="fa-solid fa-layer-group"></i></div>
             <span
-                class="px-2.5 py-1 text-xs font-semibold bg-blue-500/30 text-blue-300 rounded-full border border-blue-500/20 uppercase tracking-wider">{{
-                    lesson.category }}</span>
+                class="px-2.5 py-1 text-xs font-semibold bg-blue-500/30 text-blue-300 rounded-full border border-blue-500/20 uppercase tracking-wider">
+                {{ lesson.category }}</span>
             <h1 class="text-3xl font-extrabold mt-2 mb-2 tracking-tight text-white flex items-center gap-2.5">
                 <i class="fa-solid fa-cubes text-blue-400"></i> {{ lesson.title }}
             </h1>
