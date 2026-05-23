@@ -583,8 +583,8 @@ export const lessons = [
 
     {
         id: 4,
-        title: 'Making CodeWithDotNet Documentation',
-        slug: 'making-codewithdotnet-documentation',
+        title: 'CodeWithDotNet',
+        slug: 'codewithdotnet-documentation',
         category: 'Project Journey',
         content: `
 <div class="github-readme font-sans text-slate-800 max-w-3xl mx-auto leading-relaxed p-5">
