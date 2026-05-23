@@ -91,7 +91,7 @@ Hello World
 
 Example of variables:
 
-string name = "Pravakar";
+string name = "Argho";
 int age = 22;
 
 Console.WriteLine(name);
