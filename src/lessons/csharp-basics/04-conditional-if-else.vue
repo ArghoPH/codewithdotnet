@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from 'vue';
+
+// Interactive Lab
+const score = ref(75);
+</script>
 <template>
     <div class="min-h-screen bg-slate-50 text-slate-800 font-sans p-6 md:p-12 overflow-y-auto">
 
@@ -62,6 +68,29 @@
                             </label>
                             <input type="range" min="0" max="100" v-model.number="score"
                                 class="w-full accent-blue-500 bg-slate-700 h-2 rounded-lg appearance-none cursor-pointer" />
+                        </div>
+
+                        <!-- Quick Buttons -->
+                        <div class="grid grid-cols-3  gap-2">
+                            <button
+                                class="rounded-lg bg-slate-700 px-3 py-2 text-xs font-bold text-slate-200 hover:bg-slate-600"
+                                @click="score = 45">
+                                45
+                            </button>
+
+                            <button
+                                class="rounded-lg bg-slate-700 px-3 py-2 text-xs font-bold text-slate-200 hover:bg-slate-600"
+                                @click="score = 60">
+                                60
+                            </button>
+
+                            <button
+                                class="rounded-lg bg-slate-700 px-3 py-2 text-xs font-bold text-slate-200 hover:bg-slate-600"
+                                @click="score = 80">
+                                80
+                            </button>
+
+
                         </div>
 
                         <div class="space-y-2">
@@ -294,10 +323,3 @@ Console.WriteLine(permission);</pre>
         </div>
     </div>
 </template>
-
-<script setup>
-import { ref } from 'vue';
-
-// Interactive Lab এর জন্য রিয়াক্টিভ স্টেট
-const score = ref(75);
-</script>
