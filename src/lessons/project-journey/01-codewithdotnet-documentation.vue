@@ -1,419 +1,413 @@
 <template>
+    <div class="github-readme font-sans text-slate-800 mx-auto leading-relaxed p-5 max-w-5xl">
 
-    <div class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white antialiased">
+        <!-- Core Vision & Purpose -->
+        <h2 class="pb-1 text-2xl font-bold mt-6 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
+            <i class="fa-solid fa-bullseye text-rose-500"></i> The Core Mission
+        </h2>
+        <p class="mt-0 mb-4 text-base text-slate-600">
+            <strong>CodeWithDotNet</strong> is more than just a website; it is an active portfolio, a sandbox for
+            front-end architecture, and a structured knowledge base. The philosophy is simple: <em
+                class="text-indigo-600 font-semibold not-italic">Learn in public, build with intent, and document
+                everything.</em>
+        </p>
 
-        <!-- Top Glow Effects -->
-        <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute top-20 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 my-4">
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-md flex items-start gap-2.5">
+                <i class="fa-solid fa-graduation-cap text-indigo-500 mt-1"></i>
+                <div><strong class="block text-sm text-slate-900 font-semibold">Learn by Doing</strong><span
+                        class="text-xs text-slate-500">Translating abstract backend .NET concepts into clean front-end
+                        explanations.</span></div>
+            </div>
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-md flex items-start gap-2.5">
+                <i class="fa-solid fa-cloud-arrow-up text-emerald-500 mt-1"></i>
+                <div><strong class="block text-sm text-slate-900 font-semibold">Continuous Deployment</strong><span
+                        class="text-xs text-slate-500">Every single learning module is committed to Git and instantly
+                        deployed.</span></div>
+            </div>
+        </div>
 
-        <div class="max-w-5xl mx-auto px-4 py-12 relative z-10">
+        <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
 
-            <!-- Header Section -->
-            <header class="text-center mb-16 border-b border-slate-800 pb-10">
-                <div
-                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-sm font-medium mb-4 uppercase tracking-wider">
-                    <i class="fas fa-graduation-cap text-xs"></i> Lesson 02
-                </div>
-                <h1
-                    class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent mb-4 tracking-tight">
-                    .NET Code Journey
-                </h1>
-                <p class="text-lg text-slate-400 max-w-2xl mx-auto font-light">
-                    <i class="fas fa-route text-indigo-400 mr-2"></i> C#/.NET basic coding journey শুরু করা
-                </p>
-            </header>
+        <!-- Tech Stack & Setup -->
+        <div class="github-readme font-sans text-slate-800 max-w-5xl mx-auto leading-relaxed p-5">
 
-            <!-- Dashboard: Objective & Tools Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                <!-- Objective Card -->
-                <div
-                    class="md:col-span-2 bg-slate-900/60 backdrop-blur-md border border-slate-800 p-6 rounded-2xl relative overflow-hidden group hover:border-slate-700 transition duration-300">
+            <!-- Section: Architecture & Pipeline -->
+            <h2
+                class="pb-2 text-2xl font-bold mt-6 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
+                <i class="fa-solid fa-network-wired text-indigo-600"></i> CodeWithDotNet: Infrastructure & Pipeline
+                Architecture
+            </h2>
+            <p class="mt-0 mb-6 text-base text-slate-600">
+                The modern web infrastructure relies on decoupling code creation from its hosting platform. Below is the
+                automated continuous integration and continuous deployment (CI/CD) workflow configured for
+                <strong>CodeWithDotNet</strong>, showing how a local change goes live globally in seconds.
+            </p>
+
+            <!-- Informative Infographic Layer -->
+            <div class="my-6 p-6 bg-slate-900 text-slate-100 rounded-xl shadow-lg border border-slate-800">
+                <h4 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-6 flex items-center gap-1.5">
+                    <i class="fa-solid fa-circle-nodes"></i> Automated CI/CD Lifecycle Diagram
+                </h4>
+
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs">
+
+                    <!-- Box 1: Local IDE -->
                     <div
-                        class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-2xl group-hover:bg-indigo-500/10 transition duration-300">
+                        class="flex-1 w-full p-4 bg-slate-800/80 border border-slate-700 rounded-lg text-center relative group">
+                        <div class="text-blue-400 text-lg mb-1.5"><i class="fa-solid fa-laptop-code"></i></div>
+                        <span class="font-bold block text-slate-200 mb-1">1. Local Workstation</span>
+                        <span class="text-[11px] text-slate-400 block">Vue 3 + Vite + Tailwind CSS Development</span>
                     </div>
-                    <div class="flex items-start gap-4">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 text-xl">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-slate-200 mb-2">Lesson Objective</h3>
-                            <p class="text-slate-400 leading-relaxed text-sm">
-                                এই lesson শেষে learner বুঝবে কীভাবে .NET project তৈরি ও run করতে হয়, basic C# syntax
-                                লিখতে হয়, এবং console output/input ব্যবহার করতে হয়।
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Required Tools Card -->
-                <div
-                    class="bg-slate-900/60 backdrop-blur-md border border-slate-800 p-6 rounded-2xl relative overflow-hidden group hover:border-slate-700 transition duration-300">
+                    <!-- Arrow -->
+                    <div class="text-indigo-500 text-lg font-bold md:rotate-0 rotate-90"><i
+                            class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Box 2: Version Control -->
                     <div
-                        class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl group-hover:bg-emerald-500/10 transition duration-300">
+                        class="flex-1 w-full p-4 bg-slate-800/80 border border-slate-700 rounded-lg text-center relative">
+                        <div class="text-purple-400 text-lg mb-1.5"><i class="fa-brands fa-github"></i></div>
+                        <span class="font-bold block text-slate-200 mb-1">2. Git / GitHub</span>
+                        <span class="text-[11px] text-slate-400 block">Remote Repository Source of Truth</span>
                     </div>
-                    <div class="flex items-start gap-4">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 text-xl">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div class="w-full">
-                            <h3 class="text-lg font-bold text-slate-200 mb-2">Required Tools</h3>
-                            <ul class="space-y-1.5 text-sm text-slate-400">
-                                <li class="flex items-center gap-2"><i
-                                        class="fab fa-microsoft text-blue-400 text-xs w-4"></i> VS Code / Visual Studio
-                                </li>
-                                <li class="flex items-center gap-2"><i
-                                        class="fas fa-cubes text-purple-400 text-xs w-4"></i> .NET SDK</li>
-                                <li class="flex items-center gap-2"><i
-                                        class="fas fa-terminal text-emerald-400 text-xs w-4"></i> Terminal / CMD</li>
-                            </ul>
-                        </div>
+
+                    <!-- Arrow -->
+                    <div class="text-indigo-500 text-lg font-bold md:rotate-0 rotate-90"><i
+                            class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Box 3: Vercel Compilation -->
+                    <div
+                        class="flex-1 w-full p-4 bg-slate-800/80 border border-slate-700 rounded-lg text-center relative">
+                        <div class="text-amber-400 text-lg mb-1.5"><i
+                                class="fa-solid fa-triangle-exclamation animate-pulse"></i></div>
+                        <span class="font-bold block text-slate-200 mb-1">3. Vercel Hook</span>
+                        <span class="text-[11px] text-slate-400 block">Automatic Trigger & Production Build</span>
                     </div>
+
+                    <!-- Arrow -->
+                    <div class="text-indigo-500 text-lg font-bold md:rotate-0 rotate-90"><i
+                            class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Box 4: Edge CDN -->
+                    <div
+                        class="flex-1 w-full p-4 bg-emerald-950/40 border border-emerald-800 text-emerald-200 rounded-lg text-center relative">
+                        <div class="text-emerald-400 text-lg mb-1.5"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <span class="font-bold block text-emerald-100 mb-1">4. Live Platform</span>
+                        <span class="text-[11px] text-emerald-400 block">Global CDN Deployment Network</span>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- What students will learn Card -->
-            <div
-                class="bg-gradient-to-r from-slate-900 via-indigo-950/20 to-slate-900 border border-indigo-500/20 p-6 rounded-2xl mb-16">
-                <h3 class="text-lg font-bold text-indigo-300 mb-4 flex items-center gap-2">
-                    <i class="fas fa-star text-amber-400 animate-pulse"></i> এই লেসন থেকে আমরা কী কী শিখবো?
-                </h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
-                    <div
-                        class="flex items-center gap-2 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60 text-slate-300">
-                        <i class="fas fa-check-circle text-indigo-400"></i> .NET project structure
-                    </div>
-                    <div
-                        class="flex items-center gap-2 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60 text-slate-300">
-                        <i class="fas fa-check-circle text-indigo-400"></i> Program.cs file এর কাজ
-                    </div>
-                    <div
-                        class="flex items-center gap-2 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60 text-slate-300">
-                        <i class="fas fa-check-circle text-indigo-400"></i> Console.WriteLine() ব্যবহার
-                    </div>
-                    <div
-                        class="flex items-center gap-2 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60 text-slate-300">
-                        <i class="fas fa-check-circle text-indigo-400"></i> Variable declare করা
-                    </div>
-                    <div
-                        class="flex items-center gap-2 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60 text-slate-300">
-                        <i class="fas fa-check-circle text-indigo-400"></i> Basic data types
-                    </div>
-                    <div
-                        class="flex items-center gap-2 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60 text-slate-300">
-                        <i class="fas fa-check-circle text-indigo-400"></i> User input নেওয়া
-                    </div>
-                </div>
-            </div>
+            <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
 
-            <!-- Course Contents Sections -->
-            <div class="space-y-12">
+            <!-- Detailed Processes -->
+            <h3 class="text-xl font-bold mt-6 mb-4 text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-list-check text-slate-700"></i> Core Execution Mechanics
+            </h3>
 
-                <!-- Section 1 -->
-                <section
-                    class="relative pl-8 md:pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-800">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-indigo-500 flex items-center justify-center text-[10px] text-indigo-400 font-bold shadow-lg shadow-indigo-500/20">
-                        1</div>
-                    <h2 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
-                        Introduction <i class="fas fa-hand-wave text-amber-400 text-sm"></i>
-                    </h2>
-                    <p class="text-slate-400 leading-relaxed text-base">
-                        স্বাগতম আপনার প্রথম <span class="text-indigo-400 font-semibold">.NET Code Journey</span>-তে! C#
-                        হচ্ছে একটি অত্যন্ত শক্তিশালী এবং আধুনিক প্রোগ্রামিং ল্যাঙ্গুয়েজ। এই লেসনে আমরা কোনো জটিল থিওরিতে
-                        না গিয়ে সরাসরি কোডিংয়ের দুনিয়ায় পা রাখবো এবং দেখবো কীভাবে একটি রিয়েল প্রজেক্ট কাজ করে।
-                    </p>
-                </section>
-
-                <!-- Section 2 -->
-                <section
-                    class="relative pl-8 md:pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-800">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-indigo-500 flex items-center justify-center text-[10px] text-indigo-400 font-bold shadow-lg shadow-indigo-500/20">
-                        2</div>
-                    <h2 class="text-xl font-bold text-white mb-3">.NET project create করা</h2>
-                    <p class="text-slate-400 mb-4">
-                        সবার প্রথমে আপনার টার্মিনাল বা কমান্ড প্রম্পট ওপেন করুন এবং নিচের কমান্ডটি রান করে একটি নতুন
-                        কনসোল অ্যাপ্লিকেশন তৈরি করুন:
-                    </p>
-                    <!-- Terminal UI Box -->
-                    <div class="bg-[#181824] rounded-xl border border-slate-800 overflow-hidden shadow-2xl max-w-2xl">
-                        <div class="bg-[#11111a] px-4 py-2 flex items-center gap-2 border-b border-slate-800/60">
-                            <span class="w-3 h-3 rounded-full bg-red-500/70 inline-block"></span>
-                            <span class="w-3 h-3 rounded-full bg-yellow-500/70 inline-block"></span>
-                            <span class="w-3 h-3 rounded-full bg-green-500/70 inline-block"></span>
-                            <span class="text-xs text-slate-500 ml-2 code-font">Terminal</span>
-                        </div>
-                        <div class="p-4 code-font text-sm leading-6">
-                            <div class="text-slate-500"># Create a new console application</div>
-                            <div><span class="text-pink-400">dotnet</span> new console -n <span
-                                    class="text-emerald-400">DotnetCodeJourney</span></div>
-                            <div class="text-slate-500 mt-2"># Navigate inside the project folder</div>
-                            <div><span class="text-pink-400">cd</span> <span
-                                    class="text-emerald-400">DotnetCodeJourney</span></div>
-                        </div>
+            <div class="space-y-6">
+                <!-- Milestone 1 -->
+                <div class="flex gap-4 items-start">
+                    <div class="p-2 bg-blue-50 border border-blue-200 rounded-lg text-blue-600 mt-1">
+                        <i class="fa-solid fa-bolt text-lg w-5 text-center"></i>
                     </div>
-                </section>
-
-                <!-- Section 3 -->
-                <section
-                    class="relative pl-8 md:pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-800">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-indigo-500 flex items-center justify-center text-[10px] text-indigo-400 font-bold shadow-lg shadow-indigo-500/20">
-                        3</div>
-                    <h2 class="text-xl font-bold text-white mb-3">Program.cs file বোঝা</h2>
-                    <p class="text-slate-400 leading-relaxed">
-                        প্রজেক্ট ফোল্ডারে ঢোকার পর আপনি <span
-                            class="text-teal-400 code-font font-medium">Program.cs</span> নামের একটি ফাইল দেখতে পাবেন।
-                        এটিই হলো আমাদের অ্যাপ্লিকেশনের <span class="text-amber-400 font-semibold">Entry Point</span> বা
-                        মূল চালিকাশক্তি। আমরা যত কোড লিখবো, তার এক্সিকিউশন বা রান হওয়া এখান থেকেই শুরু হবে।
-                    </p>
-                </section>
-
-                <!-- Section 4 -->
-                <section
-                    class="relative pl-8 md:pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-800">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-indigo-500 flex items-center justify-center text-[10px] text-indigo-400 font-bold shadow-lg shadow-indigo-500/20">
-                        4</div>
-                    <h2 class="text-xl font-bold text-white mb-3">First Console Output</h2>
-                    <p class="text-slate-400 mb-4">
-                        কনসোলে বা স্ক্রিনে যেকোনো টেক্সট প্রিন্ট করার জন্য আমরা ব্যবহার করি <code
-                            class="text-pink-400 bg-pink-500/10 px-1.5 py-0.5 rounded code-font text-sm">Console.WriteLine()</code>।
-                        যেমন:
-                    </p>
-                    <!-- VS Code Style Code Block -->
-                    <div class="bg-[#1e1e1e] rounded-xl border border-slate-800 overflow-hidden shadow-2xl max-w-xl">
-                        <div
-                            class="bg-[#181818] px-4 py-2 flex items-center justify-between border-b border-slate-800/60">
-                            <div class="flex items-center gap-2">
-                                <span class="w-3 h-3 rounded-full bg-red-500/50 inline-block"></span>
-                                <span class="w-3 h-3 rounded-full bg-yellow-500/50 inline-block"></span>
-                                <span class="w-3 h-3 rounded-full bg-green-500/50 inline-block"></span>
-                                <span class="text-xs text-slate-400 ml-2 code-font">Program.cs</span>
-                            </div>
-                            <i class="text-xs text-slate-600 fab fa-csharp"></i>
-                        </div>
-                        <div class="p-4 code-font text-sm leading-6 text-slate-300">
-                            <div><span class="text-[#4ec9b0]">Console</span>.<span
-                                    class="text-[#dcdcaa]">WriteLine</span>(<span class="text-[#ce9178]">"Welcome to
-                                    .NET Code Journey"</span>);</div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 5 -->
-                <section
-                    class="relative pl-8 md:pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-800">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-indigo-500 flex items-center justify-center text-[10px] text-indigo-400 font-bold shadow-lg shadow-indigo-500/20">
-                        5</div>
-                    <h2 class="text-xl font-bold text-white mb-3">Variables and Data Types</h2>
-                    <p class="text-slate-400 mb-4">
-                        ডাটা বা তথ্য মেমোরিতে সাময়িকভাবে সেভ রাখার জন্য আমরা <span
-                            class="text-indigo-400 font-semibold">Variable</span> ব্যবহার করি। ডাটার ধরনের ওপর ভিত্তি
-                        করে বিভিন্ন রকম <span class="text-indigo-400 font-semibold">Data Types</span> যেমন লেখা বা
-                        টেক্সটের জন্য <code class="text-indigo-300 bg-indigo-950 px-1 py-0.5 rounded">string</code> এবং
-                        পূর্ণসংখ্যার জন্য <code class="text-indigo-300 bg-indigo-950 px-1 py-0.5 rounded">int</code>
-                        ব্যবহৃত হয়।
-                    </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
-                        <div class="bg-slate-900/40 border border-slate-800 p-4 rounded-xl">
-                            <span class="text-xs font-bold text-sky-400 uppercase tracking-wider block mb-1">String
-                                (লেখা)</span>
-                            <div class="code-font text-sm text-slate-300 mb-2"><span class="text-blue-400">string</span>
-                                name = <span class="text-orange-300">"Rahim"</span>;</div>
-                            <p class="text-xs text-slate-500">নাম বা যেকোনো টেক্সট ডাবল কোটেশনের মধ্যে রাখতে হয়।</p>
-                        </div>
-                        <div class="bg-slate-900/40 border border-slate-800 p-4 rounded-xl">
-                            <span class="text-xs font-bold text-purple-400 uppercase tracking-wider block mb-1">Int
-                                (পূর্ণসংখ্যা)</span>
-                            <div class="code-font text-sm text-slate-300 mb-2"><span class="text-blue-400">int</span>
-                                age = <span class="text-teal-300">20</span>;</div>
-                            <p class="text-xs text-slate-500">যেকোনো পূর্ণসংখ্যা বা নাম্বার রাখার জন্য ব্যবহৃত হয়।</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 6 -->
-                <section
-                    class="relative pl-8 md:pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-800">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-indigo-500 flex items-center justify-center text-[10px] text-indigo-400 font-bold shadow-lg shadow-indigo-500/20">
-                        6</div>
-                    <h2 class="text-xl font-bold text-white mb-3">User Input</h2>
-                    <p class="text-slate-400 leading-relaxed">
-                        ইউজার বা কিবোর্ড থেকে সরাসরি কোনো ইনপুট বা লেখা রিসিভ করতে আমরা <code
-                            class="text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded code-font text-sm">Console.ReadLine()</code>
-                        ব্যবহার করি। এটি ইউজারের টাইপ করা ডেটাকে একটি <code
-                            class="text-slate-300 font-semibold">string</code> হিসেবে আমাদের কোডে ফিরিয়ে দেয়।
-                    </p>
-                </section>
-
-                <!-- Section 7 -->
-                <section
-                    class="relative pl-8 md:pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-800">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-indigo-500 flex items-center justify-center text-[10px] text-indigo-400 font-bold shadow-lg shadow-indigo-500/20">
-                        7</div>
-                    <h2 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
-                        Full Example Code <span class="text-xs font-normal text-slate-500 code-font">(Real VS Code
-                            Theme)</span>
-                    </h2>
-                    <!-- Complete VS Code UI -->
-                    <div class="bg-[#1e1e1e] rounded-xl border border-slate-800 overflow-hidden shadow-2xl max-w-2xl">
-                        <div
-                            class="bg-[#181818] px-4 py-2 flex items-center justify-between border-b border-slate-800/60">
-                            <div class="flex items-center gap-2">
-                                <span class="w-3 h-3 rounded-full bg-[#ff5f56] inline-block"></span>
-                                <span class="w-3 h-3 rounded-full bg-[#ffbd2e] inline-block"></span>
-                                <span class="w-3 h-3 rounded-full bg-[#27c93f] inline-block"></span>
-                                <span class="text-xs text-slate-400 ml-2 code-font">Program.cs</span>
-                            </div>
-                            <span class="text-xs text-indigo-400/70 code-font">C#</span>
-                        </div>
-                        <div class="p-5 code-font text-sm leading-7 text-slate-300 overflow-x-auto">
-                            <div><span class="text-slate-500 italic">// 1. Displaying a welcome message</span></div>
-                            <div class="pl-0"><span class="text-[#4ec9b0]">Console</span>.<span
-                                    class="text-[#dcdcaa]">WriteLine</span>(<span class="text-[#ce9178]">"Welcome to
-                                    .NET Code Journey"</span>);</div>
-                            <div class="h-4"></div>
-                            <div><span class="text-slate-500 italic">// 2. Declaring variables</span></div>
-                            <div><span class="text-[#569cd6]">string</span> name = <span
-                                    class="text-[#ce9178]">"Rahim"</span>;</div>
-                            <div><span class="text-[#569cd6]">int</span> age = <span class="text-[#b5cea8]">20</span>;
-                            </div>
-                            <div class="h-4"></div>
-                            <div><span class="text-slate-500 italic">// 3. Printing variables with string
-                                    concatenation</span></div>
-                            <div><span class="text-[#4ec9b0]">Console</span>.<span
-                                    class="text-[#dcdcaa]">WriteLine</span>(<span class="text-[#ce9178]">"Name: "</span>
-                                + name);</div>
-                            <div><span class="text-[#4ec9b0]">Console</span>.<span
-                                    class="text-[#dcdcaa]">WriteLine</span>(<span class="text-[#ce9178]">"Age: "</span>
-                                + age);</div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 8 -->
-                <section
-                    class="relative pl-8 md:pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-800">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-indigo-500 flex items-center justify-center text-[10px] text-indigo-400 font-bold shadow-lg shadow-indigo-500/20">
-                        8</div>
-                    <h2 class="text-xl font-bold text-white mb-3">Code Explanation</h2>
-                    <div class="space-y-3 max-w-3xl">
-                        <div class="flex items-start gap-3 bg-slate-900/30 p-3 rounded-xl border border-slate-800/60">
-                            <div
-                                class="w-6 h-6 rounded bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-xs text-indigo-400 code-font font-bold shrink-0 mt-0.5">
-                                01</div>
-                            <p class="text-sm text-slate-400"><code
-                                    class="text-slate-300 font-semibold code-font">Console.WriteLine(...)</code> এর
-                                মাধ্যমে আমরা প্রথমে স্ক্রিনে একটি ওয়েলকাম মেসেজ প্রিন্ট করেছি।</p>
-                        </div>
-                        <div class="flex items-start gap-3 bg-slate-900/30 p-3 rounded-xl border border-slate-800/60">
-                            <div
-                                class="w-6 h-6 rounded bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-xs text-indigo-400 code-font font-bold shrink-0 mt-0.5">
-                                02</div>
-                            <p class="text-sm text-slate-400"><code
-                                    class="text-slate-300 font-semibold code-font">string name = "Rahim";</code> কোডটি
-                                মেমোরিতে "name" নামের একটি বক্স বা ভ্যারিয়েবল তৈরি করে তার মধ্যে "Rahim" টেক্সটটি স্টোর
-                                করে।</p>
-                        </div>
-                        <div class="flex items-start gap-3 bg-slate-900/30 p-3 rounded-xl border border-slate-800/60">
-                            <div
-                                class="w-6 h-6 rounded bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-xs text-indigo-400 code-font font-bold shrink-0 mt-0.5">
-                                03</div>
-                            <p class="text-sm text-slate-400"><code
-                                    class="text-slate-300 font-semibold code-font">int age = 20;</code> এখানে একই উপায়ে
-                                একটি সংখ্যা বা ইন্টিজার মেমোরিতে জমা রাখা হয়েছে।</p>
-                        </div>
-                        <div class="flex items-start gap-3 bg-slate-900/30 p-3 rounded-xl border border-slate-800/60">
-                            <div
-                                class="w-6 h-6 rounded bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-xs text-indigo-400 code-font font-bold shrink-0 mt-0.5">
-                                04</div>
-                            <p class="text-sm text-slate-400"><code
-                                    class="text-slate-300 font-semibold code-font">"Name: " + name</code> এখানে <code
-                                    class="text-amber-400 font-semibold text-xs code-font">+</code> অপারেটরটি দুটি
-                                স্ট্রিং বা লেখাকে একসাথে জোড়া (Concatenation) দিতে সাহায্য করেছে।</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 9 -->
-                <section
-                    class="relative pl-8 md:pl-10 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-800">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-emerald-500 flex items-center justify-center text-[10px] text-emerald-400 font-bold shadow-lg shadow-emerald-500/20">
-                        9</div>
-                    <h2 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
-                        Practice Task <i class="fas fa-laptop-code text-emerald-400 text-sm"></i>
-                    </h2>
-                    <!-- Glowing Task Card -->
-                    <div
-                        class="bg-gradient-to-r from-emerald-950/30 via-slate-900 to-slate-900 border border-emerald-500/30 p-6 rounded-2xl max-w-2xl relative overflow-hidden">
-                        <div
-                            class="absolute -right-4 -bottom-4 text-emerald-500/5 text-8xl pointer-events-none font-bold">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h4
-                            class="text-emerald-400 font-bold mb-2 flex items-center gap-2 text-sm uppercase tracking-wider">
-                            <i class="fas fa-bolt"></i> Hands-on Challenge
-                        </h4>
-                        <p class="text-slate-300 font-medium text-base mb-4">
-                            User থেকে name এবং age input নিয়ে console এ show করো।
-                        </p>
-                        <div
-                            class="bg-slate-950/60 p-3 rounded-xl border border-slate-800 text-xs text-slate-400 leading-5">
-                            <span class="text-amber-400 font-bold"><i class="fas fa-lightbulb"></i> হিন্টস:</span>
-                            প্রথমে <code
-                                class="text-slate-200 code-font bg-slate-900 px-1 py-0.5 rounded">Console.ReadLine()</code>
-                            দিয়ে ইনপুট নিন, একটি ভ্যারিয়েবলে রাখুন, তারপর <code
-                                class="text-slate-200 code-font bg-slate-900 px-1 py-0.5 rounded">Console.WriteLine()</code>
-                            দিয়ে সেটি প্রিন্ট করে দিন!
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 10 -->
-                <section class="relative pl-8 md:pl-10">
-                    <div
-                        class="absolute left-[-11px] top-1 w-6 h-6 rounded-full bg-slate-950 border-2 border-indigo-500 flex items-center justify-center text-[10px] text-indigo-400 font-bold shadow-lg shadow-indigo-500/20">
-                        10</div>
-                    <h2 class="text-xl font-bold text-white mb-3">Summary</h2>
-                    <!-- Glassmorphic Summary box -->
-                    <div
-                        class="bg-slate-900/40 backdrop-blur-md border border-slate-800 p-5 rounded-2xl max-w-2xl flex items-center gap-4">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 text-xl">
-                            <i class="fas fa-clipboard-check"></i>
-                        </div>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            দারুণ! এই lesson এ আমরা সফলভাবে <span class="text-slate-200 font-semibold">.NET project
-                                setup</span> করা, basic <span class="text-slate-200 font-semibold">C# code
-                                structure</span> বোঝা, <span class="text-slate-200 font-semibold">variable</span>
-                            ব্যবহার করা এবং কনসোলে ডাটা <span class="text-slate-200 font-semibold">output</span> ও <span
-                                class="text-slate-200 font-semibold">input</span> নেওয়ার নিয়মগুলো শিখে ফেললাম।
+                    <div>
+                        <h4 class="text-base font-semibold text-slate-900">1. Vue 3 Initialization via Vite Engine</h4>
+                        <p class="text-sm text-slate-600 mt-0.5">
+                            Instead of legacy bundlers, the project leverages native ES Module imports during
+                            development via <strong>Vite</strong>. This prevents upfront bundling of the entire asset
+                            tree, loading modules instantly on-demand and accelerating HMR (Hot Module Replacement)
+                            speeds.
                         </p>
                     </div>
-                </section>
+                </div>
 
+                <!-- Milestone 2 -->
+                <div class="flex gap-4 items-start">
+                    <div class="p-2 bg-cyan-50 border border-cyan-200 rounded-lg text-cyan-600 mt-1">
+                        <i class="fa-solid fa-wand-magic-sparkles text-lg w-5 text-center"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-semibold text-slate-900">2. Utility-First PostCSS Parsing (Tailwind
+                            CSS)</h4>
+                        <p class="text-sm text-slate-600 mt-0.5">
+                            Tailwind operates on an active compilation scanner. During development, it reads our Vue
+                            component structure dynamically, generating utility classes only for the components
+                            explicitly typed. On full deployment, its scanning module eliminates dead CSS code
+                            completely, shipping an ultra-minified CSS payload.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3 -->
+                <div class="flex gap-4 items-start">
+                    <div class="p-2 bg-purple-50 border border-purple-200 rounded-lg text-purple-600 mt-1">
+                        <i class="fa-solid fa-code-commit text-lg w-5 text-center"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-semibold text-slate-900">3. Version Control Synchronization</h4>
+                        <p class="text-sm text-slate-600 mt-0.5">
+                            Local mutations are tracked atomically using decentralized Git architectures. When code
+                            commits are dispatched to the remote repository source via
+                            <code>git push origin main</code>, GitHub processes the update snapshot and fires webhook
+                            protocols out to downstream cloud platforms.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 4 -->
+                <div class="flex gap-4 items-start">
+                    <div class="p-2 bg-emerald-50 border border-emerald-200 rounded-lg text-emerald-600 mt-1">
+                        <i class="fa-solid fa-server text-lg w-5 text-center"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-semibold text-slate-900">4. CI/CD Orchestration Layer (Vercel Edge
+                            Platform)</h4>
+                        <p class="text-sm text-slate-600 mt-0.5">
+                            Vercel catches the incoming GitHub repository commit webhook trigger instantly. It launches
+                            isolated virtualization containers to run <code>npm run build</code>, transpiling Vue
+                            templates, routing schemas, and JavaScript arrays down into standard high-efficiency HTML,
+                            JS, and CSS static bundles distributed right onto global global Edge servers.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Footer Progress / Navigation -->
-            <footer
-                class="mt-20 pt-8 border-t border-slate-900 flex justify-between items-center text-sm text-slate-500">
-                <div>
-                    <span class="code-font text-indigo-400/60">02 - .NET Code Journey</span>
-                </div>
-                <div
-                    class="flex items-center gap-2 bg-slate-900 px-4 py-2 rounded-full border border-slate-800 text-slate-300 font-medium cursor-pointer hover:bg-slate-800 transition">
-                    Next Lesson <i class="fas fa-arrow-right text-xs text-indigo-400"></i>
-                </div>
-            </footer>
+        </div>
+        <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
 
+        <!-- Directory Structure -->
+        <h2 class="pb-1 text-2xl font-bold mt-6 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
+            <i class="fa-solid fa-folder-tree text-blue-500"></i> Project Directory Structure
+        </h2>
+        <p class="mt-0 mb-3 text-base text-slate-600">A clean separation of concerns has been implemented within the
+            <code>src/</code> directory:
+        </p>
+
+        <pre
+            class="p-4 overflow-x-auto text-sm leading-normal bg-[#1e1e1e] border border-[#2d2d2d] rounded-md font-mono text-[#d4d4d4] shadow-md"><code>src/
+├── <span class="text-[#4ec9b0]">components/</span>
+│   └── <span class="text-[#ce9178]">Sidebar.vue</span>       <span class="text-[#6a9955]">// Reusable sidebar, reactive navigation links</span>
+├── <span class="text-[#4ec9b0]">data/</span>
+│   └── <span class="text-[#ce9178]">lessons.js</span>        <span class="text-[#6a9955]">// Centralized database for lesson metadata</span>
+├── <span class="text-[#4ec9b0]">pages/</span>
+│   └── <span class="text-[#ce9178]">LessonPage.vue</span>     <span class="text-[#6a9955]">// Dynamic routing target for parsing active lessons</span>
+├── <span class="text-[#4ec9b0]">router/</span>
+│   └── <span class="text-[#ce9178]">index.js</span>          <span class="text-[#6a9955]">// Vue Router mapping configuration</span>
+├── <span class="text-[#4ec9b0]">assets/</span>
+│   └── <span class="text-[#ce9178]">main.css</span>          <span class="text-[#6a9955]">// Global Tailwind styles and directive configuration</span>
+├── App.vue               <span class="text-[#6a9955]">// Main shell component layout wrapper</span>
+└── main.js               <span class="text-[#6a9955]">// Application entry point and bootstrapping</span></code></pre>
+
+        <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
+
+        <!-- Engineering Concepts Learned -->
+        <h2 class="pb-1 text-2xl font-bold mt-6 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
+            <i class="fa-solid fa-brain text-purple-600"></i> Core Engineering Paradigms Mastered
+        </h2>
+
+        <!-- Concept 1 -->
+        <div class="mb-5">
+            <h3 class="text-lg font-semibold text-slate-900 flex items-center gap-2 mb-1.5">
+                <i class="fa-solid fa-puzzle-piece text-indigo-500"></i> 1. Component-Driven Architecture
+            </h3>
+            <p class="text-sm text-slate-600 mb-2 pl-6">
+                Instead of treating web interfaces as huge monolithic blobs of HTML, UI elements are broken down into
+                self-contained, modular, reusable blocks.
+            </p>
+            <div class="pl-6 font-semibold text-xs text-slate-500 uppercase tracking-wider mb-1">Architectural
+                Realization:</div>
+            <div class="pl-6">
+                <pre
+                    class="p-3 overflow-x-auto text-xs leading-normal bg-[#1e1e1e] border border-[#2d2d2d] rounded-md font-mono text-[#d4d4d4]"><code><span class="text-[#6a9955]">&lt;!-- Inside App.vue --&gt;</span>
+<span class="text-[#569cd6]">&lt;template&gt;</span>
+  <span class="text-[#569cd6]">&lt;div</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"flex"</span><span class="text-[#569cd6]">&gt;</span>
+    <span class="text-[#4ec9b0]">&lt;Sidebar /&gt;</span> <span class="text-[#6a9955]">&lt;!-- Isolated scope component --&gt;</span>
+    <span class="text-[#569cd6]">&lt;main</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"flex-1"</span><span class="text-[#569cd6]">&gt;&lt;router-view /&gt;&lt;/main&gt;</span>
+  <span class="text-[#569cd6]">&lt;/div&gt;</span>
+<span class="text-[#569cd6]">&lt;/template&gt;</span></code></pre>
+            </div>
+        </div>
+
+        <!-- Concept 2 -->
+        <div class="mb-5">
+            <h3 class="text-lg font-semibold text-slate-900 flex items-center gap-2 mb-1.5">
+                <i class="fa-solid fa-route text-blue-500"></i> 2. Client-Side Decoupled Routing
+            </h3>
+            <p class="text-sm text-slate-600 mb-2 pl-6">
+                Vue Router intercepts standard browser server requests. When navigating from
+                <code>/lessons/what-is-dotnet</code> to another lesson, the browser does not trigger a full refresh.
+                Instead, components swap out instantly, preserving internal application state and providing a modern,
+                desktop-like app experience.
+            </p>
+        </div>
+
+        <!-- Concept 3 & 4 Combined Dynamic / Data Driven UI -->
+        <div class="mb-5">
+            <h3 class="text-lg font-semibold text-slate-900 flex items-center gap-2 mb-1.5">
+                <i class="fa-solid fa-database text-amber-500"></i> 3. Data-Driven UI & Dynamic Routing
+            </h3>
+            <p class="text-sm text-slate-600 mb-2 pl-6">
+                Hardcoding text files for every new lesson introduces technical debt. By shifting structural data to a
+                centralized JavaScript object configuration array inside <code>lessons.js</code>, the user interface
+                acts strictly as a reactive shell.
+            </p>
+            <div class="pl-6 font-semibold text-xs text-slate-500 uppercase tracking-wider mb-1">Structural
+                Configuration Matrix (lessons.js):</div>
+            <div class="pl-6">
+                <pre
+                    class="p-3 overflow-x-auto text-xs leading-normal bg-[#1e1e1e] border border-[#2d2d2d] rounded-md font-mono text-[#d4d4d4]"><code><span class="text-[#569cd6]">export const</span> <span class="text-[#9cdcfe]">lessons</span> = [
+  {
+    <span class="text-[#9cdcfe]">id:</span> <span class="text-[#ce9178]">"what-is-dotnet"</span>,
+    <span class="text-[#9cdcfe]">title:</span> <span class="text-[#ce9178]">"What is .NET?"</span>,
+    <span class="text-[#9cdcfe]">category:</span> <span class="text-[#ce9178]">"Basics"</span>
+  },
+  {
+    <span class="text-[#9cdcfe]">id:</span> <span class="text-[#ce9178]">"csharp-introduction"</span>,
+    <span class="text-[#9cdcfe]">title:</span> <span class="text-[#ce9178]">"Introduction to C#"</span>,
+    <span class="text-[#9cdcfe]">category:</span> <span class="text-[#ce9178]">"C#"</span>
+  }
+];</code></pre>
+            </div>
+            <div class="bg-amber-50 border-l-4 border-l-amber-500 p-4 my-3 ml-6 rounded-r-md text-xs text-amber-900">
+                <strong>The Automation Payoff:</strong> Adding a new item to the object array instantly populates the
+                Sidebar navigation and sets up a dynamic listener route automatically without touching route view
+                templates.
+            </div>
+        </div>
+
+        <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
+
+        <!-- Section: Implementation Architecture (App.vue) -->
+        <h2 class="pb-1 text-2xl font-bold mt-10 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
+            <i class="fa-solid fa-code-branch text-blue-600"></i> Layout Implementation: <code>App.vue</code>
+        </h2>
+        <p class="mt-0 mb-4 text-base text-slate-600">
+            The conceptual responsive workflow discussed above is fully orchestrated via declarative bindings inside the
+            main entry layout component. Here is the concrete implementation architecture of
+            <strong>CodeWithDotNet</strong>:
+        </p>
+
+        <!-- VS Code Styled Full Code Block -->
+        <div class="my-4 shadow-md rounded-md overflow-hidden border border-[#2d2d2d]">
+            <!-- Top Window Bar for Design -->
+            <div class="bg-[#2d2d2d] px-4 py-2 flex items-center justify-between text-xs font-mono text-[#neutral-400]">
+                <span class="text-slate-400 flex items-center gap-1.5"><i
+                        class="fa-regular fa-file-code text-emerald-500"></i> App.vue</span>
+                <span class="text-slate-500">Vue 3 Composition API</span>
+            </div>
+
+            <pre
+                class="p-4 overflow-x-auto text-xs sm:text-sm leading-normal bg-[#1e1e1e] font-mono text-[#d4d4d4] max-h-[450px] overflow-y-auto"><code><span class="text-[#569cd6]">&lt;script</span> <span class="text-[#9cdcfe]">setup</span><span class="text-[#569cd6]">&gt;</span>
+<span class="text-[#569cd6]">import</span> { <span class="text-[#9cdcfe]">ref</span> } <span class="text-[#569cd6]">from</span> <span class="text-[#ce9178]">'vue'</span>
+<span class="text-[#569cd6]">import</span> { <span class="text-[#9cdcfe]">RouterView</span> } <span class="text-[#569cd6]">from</span> <span class="text-[#ce9178]">'vue-router'</span>
+<span class="text-[#569cd6]">import</span> <span class="text-[#9cdcfe]">Sidebar</span> <span class="text-[#569cd6]">from</span> <span class="text-[#ce9178]">'./components/Sidebar.vue'</span>
+
+<span class="text-[#569cd6]">const</span> <span class="text-[#9cdcfe]">isSidebarOpen</span> = <span class="text-[#dcdcaa]">ref</span>(<span class="text-[#569cd6]">false</span>)
+<span class="text-[#569cd6]">&lt;/script&gt;</span>
+
+<span class="text-[#569cd6]">&lt;template&gt;</span>
+  <span class="text-[#569cd6]">&lt;div</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"flex h-screen overflow-hidden bg-slate-100"</span><span class="text-[#569cd6]">&gt;</span>
+
+    <span class="text-[#6a9955]">&lt;!-- Mobile Overlay Backdrop --&gt;</span>
+    <span class="text-[#569cd6]">&lt;div</span> 
+      <span class="text-[#9cdcfe]">v-if</span>=<span class="text-[#ce9178]">"isSidebarOpen"</span> 
+      <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"fixed inset-0 z-40 bg-black/50 lg:hidden"</span> 
+      <span class="text-[#4ec9b0]">@click</span>=<span class="text-[#9cdcfe]">"isSidebarOpen = <span class="text-[#569cd6]">false</span>"</span>
+    <span class="text-[#569cd6]">&gt;&lt;/div&gt;</span>
+
+    <span class="text-[#6a9955]">&lt;!-- Drawer Sidebar Panel --&gt;</span>
+    <span class="text-[#569cd6]">&lt;aside</span> <span class="text-[#4ec9b0]">:class</span>=<span class="text-[#ce9178]">"[
+      'fixed left-0 top-0 z-50 h-screen w-72 transform overflow-y-auto transition-transform duration-300 lg:static lg:translate-x-0',
+      isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+    ]"</span><span class="text-[#569cd6]">&gt;</span>
+      <span class="text-[#569cd6]">&lt;Sidebar</span> <span class="text-[#569cd6]">/&gt;</span>
+    <span class="text-[#569cd6]">&lt;/aside&gt;</span>
+
+    <span class="text-[#6a9955]">&lt;!-- Main Content Viewport Portals --&gt;</span>
+    <span class="text-[#569cd6]">&lt;main</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"flex-1 overflow-y-auto"</span><span class="text-[#569cd6]">&gt;</span>
+
+      <span class="text-[#6a9955]">&lt;!-- Responsive Mobile Header (Hidden on Desktop viewports) --&gt;</span>
+      <span class="text-[#569cd6]">&lt;div</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"sticky top-0 z-30 flex items-center justify-between border-b border-slate-200 bg-white px-5 py-4 lg:hidden"</span><span class="text-[#569cd6]">&gt;</span>
+        <span class="text-[#569cd6]">&lt;button</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"flex h-11 w-11 items-center justify-center rounded-xl bg-slate-900 text-white"</span> <span class="text-[#4ec9b0]">@click</span>=<span class="text-[#9cdcfe]">"isSidebarOpen = <span class="text-[#569cd6]">true</span>"</span><span class="text-[#569cd6]">&gt;</span>
+          <span class="text-[#569cd6]">&lt;i</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"fa-solid fa-bars"</span><span class="text-[#569cd6]">&gt;&lt;/i&gt;</span>
+        <span class="text-[#569cd6]">&lt;/button&gt;</span>
+        <span class="text-[#569cd6]">&lt;h1</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"text-lg font-bold text-slate-900"</span><span class="text-[#569cd6]">&gt;</span>CodeWithDotNet<span class="text-[#569cd6]">&lt;/h1&gt;</span>
+      <span class="text-[#569cd6]">&lt;/div&gt;</span>
+
+      <span class="text-[#6a9955]">&lt;!-- Dynamic Injection View Node --&gt;</span>
+      <span class="text-[#569cd6]">&lt;div</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"p-5 lg:p-10"</span><span class="text-[#569cd6]">&gt;</span>
+        <span class="text-[#569cd6]">&lt;div</span> <span class="text-[#9cdcfe]">class</span>=<span class="text-[#ce9178]">"mx-auto max-w-6xl"</span><span class="text-[#569cd6]">&gt;</span>
+          <span class="text-[#4ec9b0]">&lt;RouterView</span> <span class="text-[#569cd6]">/&gt;</span>
+        <span class="text-[#569cd6]">&lt;/div&gt;</span>
+      <span class="text-[#569cd6]">&lt;/div&gt;</span>
+
+    <span class="text-[#569cd6]">&lt;/main&gt;</span>
+  <span class="text-[#569cd6]">&lt;/div&gt;</span>
+<span class="text-[#569cd6]">&lt;/template&gt;</span></code></pre>
+        </div>
+
+        <!-- Code Metrics / Key Takeaways -->
+        <div class="mt-4 border border-slate-200 rounded-xl bg-white p-4">
+            <h4 class="text-sm font-semibold text-slate-900 flex items-center gap-1.5 mb-2">
+                <i class="fa-solid fa-square-poll-horizontal text-indigo-500"></i> Code Architecture Highlights:
+            </h4>
+            <ul class="pl-5 list-none space-y-1.5 text-xs sm:text-sm text-slate-600">
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-caret-right text-indigo-500 mt-1"></i>
+                    <div><strong>Dynamic Array Bindings:</strong> Tailwind's classes are evaluated inside an array
+                        matrix (<code>:class="[...]"</code>), allowing modern conditional toggles based on the reactive
+                        state of <code>isSidebarOpen</code>.</div>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-caret-right text-indigo-500 mt-1"></i>
+                    <div><strong>Screen Space Separation (<code>lg:static</code>):</strong> The layout completely shifts
+                        behavior at the <code>1024px</code> grid mark (Large Viewports). On desktop screens, mobile
+                        overrides like translation modifications are completely bypassed, locking the navigation
+                        natively into the application container layout.</div>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="h-1 p-0 my-6 bg-slate-200 border-0">
+
+        <!-- Roadmap & Ultimate Target -->
+        <h2 class="pb-1 text-2xl font-bold mt-6 mb-4 border-b border-slate-200 flex items-center gap-2 text-slate-900">
+            <i class="fa-solid fa-map text-emerald-600"></i> Future Roadmap Strategy
+        </h2>
+        <p class="mt-0 mb-4 text-base text-slate-600">
+            The architecture built today scales horizontally. The roadmap ahead ensures CodeWithDotNet evolves from a
+            simple template into a full-scale ecosystem engine:
+        </p>
+
+        <!-- Timeline Flow -->
+        <div class="pl-4 border-l-2 border-slate-200 space-y-4 my-4 font-sans text-sm">
+            <div class="relative">
+                <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600"></div>
+                <span class="font-bold text-slate-900 block">Phase 1: Core Fundamentals (Current)</span>
+                <span class="text-xs text-slate-500">Documenting basic .NET runtimes, CLR compilation, and core C#
+                    types/structures.</span>
+            </div>
+            <div class="relative">
+                <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-slate-400"></div>
+                <span class="font-bold text-slate-700 block">Phase 2: Backend Architecture & APIs</span>
+                <span class="text-xs text-slate-500">Implementing patterns with ASP.NET Core, building robust RESTful
+                    APIs, and understanding routing mechanics.</span>
+            </div>
+            <div class="relative">
+                <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-slate-400"></div>
+                <span class="font-bold text-slate-700 block">Phase 3: Data Layer Integration</span>
+                <span class="text-xs text-slate-500">Connecting persistent database instances using SQL Server and
+                    Entity Framework Core (EF Core).</span>
+            </div>
+            <div class="relative">
+                <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-slate-400"></div>
+                <span class="font-bold text-slate-700 block">Phase 4: Full Stack Project Synthesis</span>
+                <span class="text-xs text-slate-500">Deploying unified real-world administrative dashboards and
+                    full-fledged ERP microservices.</span>
+            </div>
         </div>
 
     </div>
