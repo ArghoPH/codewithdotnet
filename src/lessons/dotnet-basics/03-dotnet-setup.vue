@@ -5,7 +5,7 @@
         <!-- Section Header -->
         <header class="border-b border-slate-200 pb-4 mb-6 flex items-center gap-3">
             <i class="fa-solid fa-code text-blue-600 text-2xl"></i>
-            <h1 class="text-3xl font-bold text-slate-900">02 - Setup Your .NET Development Environment</h1>
+            <h1 class="text-3xl font-bold text-slate-900">Setup Your .NET Development Environment</h1>
         </header>
 
         <!-- Summary Highlight (Objective) -->
