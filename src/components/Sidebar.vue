@@ -1,27 +1,63 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { courses } from '@/utils/lessonLoader'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
+const searchQuery = ref('')
 const openCourses = ref({})
 
 if (courses.length > 0) {
     openCourses.value[courses[0].title] = true
 }
 
+const filteredCourses = computed(() => {
+    if (!searchQuery.value) {
+        return courses
+    }
+
+    return courses
+        .map((course) => {
+            return {
+                ...course,
+                lessons: course.lessons.filter((lesson) =>
+                    lesson.title.toLowerCase().includes(searchQuery.value.toLowerCase())
+                ),
+            }
+        })
+
+        .filter((course) => course.lessons.length > 0)
+})
+
 function toggleCourse(courseTitle) {
     openCourses.value[courseTitle] = !openCourses.value[courseTitle]
 }
 
 function isCourseOpen(courseTitle) {
+    if (searchQuery.value) {
+        const course = filteredCourses.value.find(
+            (item) => item.title === courseTitle
+        )
+
+        return course && course.lessons.length > 0
+            ? openCourses.value[courseTitle] !== false
+            : false
+    }
+
+
     return openCourses.value[courseTitle]
 }
+
+watch(searchQuery, () => {
+    filteredCourses.value.forEach((course) => {
+        openCourses.value[course.title] = true
+    })
+})
 </script>
 
 <template>
-    <aside class="h-screen w-64 bg-slate-900 p-6 text-white">
+    <aside class="h-screen w-64 overflow-y-auto bg-slate-900 p-6 text-white">
         <h1 class="text-2xl font-bold">
             CodeWithDotNet
         </h1>
@@ -43,7 +79,12 @@ function isCourseOpen(courseTitle) {
                 Home
             </RouterLink>
 
-            <div v-for="course in courses" :key="course.title">
+            <div class="mt-5">
+                <input v-model="searchQuery" type="text" placeholder="Search lessons..."
+                    class="w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-blue-500 focus:outline-none" />
+            </div>
+
+            <div v-for="course in filteredCourses" :key="course.title">
                 <button
                     class="mt-8 mb-3 flex w-full items-center justify-between rounded-lg px-2 py-2 text-xs font-black uppercase tracking-widest text-slate-500 hover:bg-slate-800 hover:text-white"
                     @click="toggleCourse(course.title)">
@@ -69,7 +110,13 @@ function isCourseOpen(courseTitle) {
                     </RouterLink>
 
                 </div>
+
+
+
             </div>
+            <p v-if="filteredCourses.length === 0" class="mt-6 rounded-xl bg-slate-800 p-4 text-sm text-slate-400">
+                No lesson found.
+            </p>
         </nav>
     </aside>
 </template>
