@@ -42,7 +42,7 @@
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-blue-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">LIVE
                         LAB</span>
-                    <h2 class="text-2xl font-bold text-slate-900">রিয়েল-টাইম কন্ডিশন ভিজ্যুয়ালাইজার</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Real Time Example</h2>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">স্লাইডারটি পরিবর্তন করুন। কন্ডিশন ম্যাচ করার সাথে সাথে C# কোডের
                     কোন লাইনটি এক্টিভেট হচ্ছে এবং টার্মিনাল আউটপুট কী আসছে তা লাইভ দেখুন।</p>
@@ -58,7 +58,7 @@
                                 <span>Score Input</span>
                                 <span
                                     class="text-blue-400 font-mono text-sm bg-blue-500/10 px-2 py-0.5 rounded border border-blue-500/20">{{
-                                    score }} / 100</span>
+                                        score }} / 100</span>
                             </label>
                             <input type="range" min="0" max="100" v-model.number="score"
                                 class="w-full accent-blue-500 bg-slate-700 h-2 rounded-lg appearance-none cursor-pointer" />
@@ -254,7 +254,8 @@ Console.WriteLine(message); <span class="text-slate-400">// Output: Not Found</s
                         </h3>
                         <p class="text-sm text-slate-600 mb-4">Switch expression বা statement ব্যবহার করে একটি
                             <code>string role</code> ভেরিয়েবলের ওপর ভিত্তি করে এক্সেস পারমিশন প্রিন্ট করুন ("Admin" ->
-                            Full Access, "Editor" -> Edit Access, "Guest" -> Read Only).</p>
+                            Full Access, "Editor" -> Edit Access, "Guest" -> Read Only).
+                        </p>
                         <details class="bg-slate-900 rounded-lg">
                             <summary
                                 class="text-xs font-mono text-slate-400 p-3 cursor-pointer hover:text-white select-none">
