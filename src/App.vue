@@ -56,8 +56,8 @@ watch(
       </div>
 
       <!-- Content -->
-      <div class="lg:p-10">
-        <div class="mx-auto max-w-6xl">
+      <div class="">
+        <div class="mx-auto">
           <RouterView />
         </div>
       </div>

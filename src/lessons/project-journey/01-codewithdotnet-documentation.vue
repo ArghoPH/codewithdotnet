@@ -1,6 +1,6 @@
 <template>
 
-    <div class="bg-slate-950 text-slate-100 min-h-screen selection:bg-indigo-500 selection:text-white antialiased">
+    <div class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white antialiased">
 
         <!-- Top Glow Effects -->
         <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
