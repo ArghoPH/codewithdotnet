@@ -69,7 +69,12 @@ watch(searchQuery, () => {
             Developed by <a href="https://github.com/Argho" class="underline">Argho</a>
         </p>
 
+        <div class="mt-5">
+            <input v-model="searchQuery" type="text" placeholder="Search lessons..."
+                class="w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-blue-500 focus:outline-none" />
+        </div>
         <nav class="mt-10 space-y-3">
+
             <RouterLink to="/" :class="[
                 'block rounded-lg px-4 py-3 transition',
                 route.path === '/'
@@ -79,10 +84,6 @@ watch(searchQuery, () => {
                 Home
             </RouterLink>
 
-            <div class="mt-5">
-                <input v-model="searchQuery" type="text" placeholder="Search lessons..."
-                    class="w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-blue-500 focus:outline-none" />
-            </div>
 
             <div v-for="course in filteredCourses" :key="course.title">
                 <button
