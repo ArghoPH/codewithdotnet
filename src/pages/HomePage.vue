@@ -1,5 +1,5 @@
 <template>
-    <section class="space-y-16 py-6 selection:bg-blue-500 selection:text-white">
+    <section class="space-y-16 py-6 max-w-6xl mx-auto selection:bg-blue-500 selection:text-white">
         <!-- Hero Section -->
         <div
             class="relative overflow-hidden rounded-[2.5rem] border border-slate-200/60 bg-gradient-to-b from-slate-50 via-white to-slate-50/40 px-6 py-16 text-center shadow-[0_12px_40px_rgba(0,0,0,0.02)] sm:px-16 sm:py-24">
