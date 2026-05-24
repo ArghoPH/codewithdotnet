@@ -1,8 +1,23 @@
 <script setup>
+import { ref } from 'vue'
 import { courses } from '@/utils/lessonLoader'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
+
+const openCourses = ref({})
+
+if (courses.length > 0) {
+    openCourses.value[courses[0].title] = true
+}
+
+function toggleCourse(courseTitle) {
+    openCourses.value[courseTitle] = !openCourses.value[courseTitle]
+}
+
+function isCourseOpen(courseTitle) {
+    return openCourses.value[courseTitle]
+}
 </script>
 
 <template>
@@ -29,11 +44,18 @@ const route = useRoute()
             </RouterLink>
 
             <div v-for="course in courses" :key="course.title">
-                <h2 class="mt-8 mb-3 px-2 text-xs font-black uppercase tracking-widest text-slate-500">
-                    {{ course.title }}
-                </h2>
+                <button
+                    class="mt-8 mb-3 flex w-full items-center justify-between rounded-lg px-2 py-2 text-xs font-black uppercase tracking-widest text-slate-500 hover:bg-slate-800 hover:text-white"
+                    @click="toggleCourse(course.title)">
+                    <span>{{ course.title }}</span>
 
-                <div class="mt-3 space-y-2">
+                    <i :class="[
+                        'fa-solid transition-transform duration-300',
+                        isCourseOpen(course.title) ? 'fa-chevron-down' : 'fa-chevron-right'
+                    ]"></i>
+                </button>
+
+                <div v-if="isCourseOpen(course.title)" class="mt-3 space-y-2">
 
                     <RouterLink v-for="lesson in course.lessons" :key="lesson.slug" :to="`/lessons/${lesson.slug}`"
                         :class="[

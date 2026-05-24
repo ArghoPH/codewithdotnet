@@ -1,38 +1,55 @@
-const lessonModules = import.meta.glob('../lessons/**/*.vue') //finds all the .vue files in the lessons folder and its subfolders
+const lessonModules = import.meta.glob('../lessons/**/*.vue')
 
-function formatTitle(text) { // Converts "my-lesson" to "My Lesson"
-    return text
-        .replace(/-/g, ' ') // Replace dashes with spaces
-        .replace(/\b\w/g, (char) => char.toUpperCase()) // Capitalize the first letter of each word
+function removeOrderPrefix(text) {
+    return text.replace(/^\d+-/, '')
 }
-export const lessons = Object.keys(lessonModules).map((path, index) => { // For each lesson file, extract the slug, title, and category from the file path
-    const parts = path.split('/') // Split the path into parts
-    const fileName = parts[parts.length - 1].replace('vue', '') // Get the file name without the .vue extension
-    const folderName = parts[parts.length - 2] // Get the folder name, which is the category of the lesson
 
-    const slug = fileName // Generate a slug from the file name, e.g., "my-lesson"
-    const title = formatTitle(fileName) // Generate a title from the file name, e.g., "My Lesson"
-    const category = formatTitle(folderName) // Generate a category name from the folder name, e.g., "JavaScript"
+function removeExtension(text) {
+    return text.replace(/\.vue$/, '')
+}
 
-    return { // Return an object representing the lesson with its id, title, slug, category, path, and component
-        id: index + 1,
-        title,
-        slug,
-        category,
-        path,
-        component: lessonModules[path], // The component is the imported Vue component for the lesson
-    }
-})
+function formatTitle(text) {
+    return removeOrderPrefix(text)
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (char) => char.toUpperCase())
+}
 
-export const courses = Object.values( // Group the lessons by category using reduce to create an object where each key is a category and the value is an object containing the category title and an array of lessons in that category
-    lessons.reduce((groups, lesson) => { // For each lesson, check if the category already exists in the groups object. If not, create a new entry for that category with an empty lessons array. Then, push the current lesson into the appropriate category's lessons array.
-        if (!groups[lesson.category]) { // If the category doesn't exist in the groups object, create a new entry for it
-            groups[lesson.category] = { // Create a new entry for the category with its title and an empty lessons array
-                title: lesson.category, // The title of the category is the same as the category name
-                lessons: [], // The lessons array is initially empty
+export const lessons = Object.keys(lessonModules)
+    .sort()
+    .map((path, index) => {
+        const parts = path.split('/')
+
+        const rawFileName = parts[parts.length - 1]
+        const rawFolderName = parts[parts.length - 2]
+
+        const fileName = removeOrderPrefix(removeExtension(rawFileName))
+        const folderName = removeOrderPrefix(rawFolderName)
+
+        const slug = fileName
+        const title = formatTitle(fileName)
+        const category = formatTitle(folderName)
+
+        return {
+            id: index + 1,
+            title,
+            slug,
+            category,
+            path,
+            component: lessonModules[path],
+        }
+    })
+
+export const courses = Object.values(
+    lessons.reduce((groups, lesson) => {
+        if (!groups[lesson.category]) {
+            groups[lesson.category] = {
+                title: lesson.category,
+                lessons: [],
             }
         }
-        groups[lesson.category].lessons.push(lesson) // Push the current lesson into the lessons array of the appropriate category
-        return groups // Return the updated groups object for the next iteration of reduce
+
+        groups[lesson.category].lessons.push(lesson)
+
+        return groups
     }, {})
 )
