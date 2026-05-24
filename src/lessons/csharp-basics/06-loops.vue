@@ -16,7 +16,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-amber-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         1</span>
-                    <h2 class="text-2xl font-bold text-slate-900">For Loop (নির্দিষ্ট ইটারেশন)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">For Loop</h2>
                 </div>
 
                 <p class="text-slate-700 mb-4">যখন আপনি আগে থেকেই জানেন যে লুপটি ঠিক <b>কতবার</b> ঘুরবে, তখন
@@ -39,7 +39,7 @@
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-blue-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">LIVE
                         LAB</span>
-                    <h2 class="text-2xl font-bold text-slate-900">ইন্টারেক্টিভ লুপ ভিজ্যুয়ালাইজার</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Interation Loop Control</h2>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">স্লাইডারটি পরিবর্তন করে লুপের লিমিট সেট করুন এবং দেখুন কীভাবে
                     ইটারেশনগুলো কাজ করছে।</p>
@@ -95,7 +95,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-amber-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         2</span>
-                    <h2 class="text-2xl font-bold text-slate-900">While এবং Do-While লুপ</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">While & Do-While Loop</h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -130,7 +130,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-amber-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         3</span>
-                    <h2 class="text-2xl font-bold text-slate-900">Foreach Loop (কালেকশন স্পেশাল)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Foreach Loop (Collection Loop)</h2>
                 </div>
                 <p class="text-slate-700 mb-4">অ্যারে (Array) বা লিস্ট (List) এর মতো কালেকশন থেকে ডাটা পড়ার জন্য এটি
                     সবচেয়ে ক্লিন এবং নিরাপদ পদ্ধতি। এতে ইনডেক্সিং এর ঝামেলা নেই।</p>
@@ -157,7 +157,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-rose-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         4</span>
-                    <h2 class="text-2xl font-bold text-slate-900">Break vs Continue (লুপ কন্ট্রোল)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Break vs Continue</h2>
                 </div>
                 <p class="text-slate-700 mb-6">লুপের ন্যাচারাল ফ্লো পরিবর্তন করার জন্য এই দুটি <b>Jump Statements</b>
                     ব্যবহৃত হয়।</p>
@@ -191,7 +191,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-slate-900 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">ADVANCED</span>
-                    <h2 class="text-2xl font-bold text-slate-900">Nested Loops (লুপের ভেতর লুপ)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Nested Loops</h2>
                 </div>
                 <p class="text-slate-700 mb-4">ম্যাট্রিক্স ডাটা হ্যান্ডেল করতে বা প্যাটার্ন তৈরি করতে একটি লুপের ভেতর
                     আরেকটি লুপ চালানো হয়।</p>
@@ -212,7 +212,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-amber-500 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CHALLENGE</span>
-                    <h2 class="text-2xl font-bold text-slate-900">লুপ কোডিং চ্যালেঞ্জ</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Loops Coding Challenge</h2>
                 </div>
 
                 <div class="space-y-6">

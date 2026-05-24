@@ -16,7 +16,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-emerald-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         1</span>
-                    <h2 class="text-2xl font-bold text-slate-900">Constructor (অবজেক্টের জন্মলগ্ন)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Constructor (Object Initialization)</h2>
                 </div>
 
                 <p class="text-slate-700 mb-4 leading-relaxed">
@@ -89,7 +89,7 @@
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-blue-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">LIVE
                         LAB</span>
-                    <h2 class="text-2xl font-bold text-slate-900">ডাটা ভ্যালিডেশন ল্যাব (Properties Simulator)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Properties Simulator</h2>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">নিচের ইনপুটে স্যালারি টাইপ করুন। দেখুন প্রোপার্টির ভেতরের
                     <code>set</code> কন্ডিশন কীভাবে নেগেটিভ ডাটা ডিটেক্ট করে আপনার অবজেক্টের আসল স্টেটকে প্রোটেক্ট করছে।
@@ -158,7 +158,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-amber-500 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CHALLENGE</span>
-                    <h2 class="text-2xl font-bold text-slate-900">কনস্ট্রাক্টর ও প্রোপার্টি চ্যালেঞ্জ</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Constructor Coding Challenge</h2>
                 </div>
 
                 <div class="border border-slate-200 p-5 rounded-xl bg-slate-50">

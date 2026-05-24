@@ -16,7 +16,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-sky-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         1</span>
-                    <h2 class="text-2xl font-bold text-slate-900">মেথড কী এবং কেন প্রয়োজন?</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">What is Method? Why Do We Need It? </h2>
                 </div>
 
                 <p class="text-slate-700 mb-4">একটি মেথড (বা ফাংশন) হলো একগুচ্ছ কোডের ব্লক যা একটি নির্দিষ্ট কাজ সম্পন্ন
@@ -39,11 +39,12 @@ ShowWelcomeMessage(); <span class="text-slate-400">// এটি লিখলে�
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-sky-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         2</span>
-                    <h2 class="text-2xl font-bold text-slate-900">Parameters এবং Return Types</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Parameters & Return Types</h2>
                 </div>
                 <p class="text-slate-700 mb-4">মেথডকে আরও ডাইনামিক করার জন্য বাইরে থেকে ইনপুট পাঠানো যায়, যাকে
                     <b>Parameters</b> বলে। আবার মেথড কাজ শেষে কোনো রেজাল্ট ফেরত পাঠালে তাকে <b>Return Type</b> বলা হয়।
-                    কিছু ফেরত না পাঠালে তার টাইপ হয় <code>void</code>।</p>
+                    কিছু ফেরত না পাঠালে তার টাইপ হয় <code>void</code>।
+                </p>
 
                 <pre
                     class="bg-slate-900 text-blue-300 p-5 rounded-xl font-mono text-xs md:text-sm overflow-x-auto leading-relaxed">
@@ -63,7 +64,7 @@ Console.WriteLine(result); <span class="text-slate-400">// Output: 30</span></pr
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-blue-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">LIVE
                         LAB</span>
-                    <h2 class="text-2xl font-bold text-slate-900">মেথড এক্সিকিউশন সিমুলেটর</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Method Execution Simulator</h2>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">ইনপুটগুলো পরিবর্তন করুন। মেথড কীভাবে মেমরিতে আর্গুমেন্ট গ্রহণ করে
                     প্রসেস করছে এবং ডাটা রিটার্ন করছে তা লাইভ দেখুন।</p>
@@ -114,7 +115,7 @@ Console.WriteLine(result); <span class="text-slate-400">// Output: 30</span></pr
                             <span class="text-slate-500">// Active Method Call:</span><br />
                             <span class="text-purple-400">string</span> output = GetFullName(<span
                                 class="text-amber-300">"{{ firstName }}"</span>, <span class="text-amber-300">"{{
-                                lastName }}"</span>);
+                                    lastName }}"</span>);
                         </div>
                     </div>
 
@@ -125,7 +126,7 @@ Console.WriteLine(result); <span class="text-slate-400">// Output: 30</span></pr
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-sky-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         3</span>
-                    <h2 class="text-2xl font-bold text-slate-900">Method Overloading (মেথড ওভারলোডিং)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Method Overloading</h2>
                 </div>
                 <p class="text-slate-700 mb-4">একটি ক্লাসের ভেতর **একই নামে** একাধিক মেথড তৈরি করা সম্ভব, যদি তাদের
                     প্যারামিটারের সংখ্যা বা টাইপ ভিন্ন হয়। একেই মেথড ওভারলোডিং বলে। এটি পলিমরফিজম (Polymorphism) এর একটি
@@ -171,7 +172,7 @@ PrintProfile(role: <span class="text-amber-300">"Admin"</span>, name: <span clas
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-amber-500 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CHALLENGE</span>
-                    <h2 class="text-2xl font-bold text-slate-900">মেথড আর্কিটেকচার চ্যালেঞ্জ</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Methods Coding Challenge</h2>
                 </div>
 
                 <div class="border border-slate-200 p-5 rounded-xl bg-slate-50">
@@ -180,7 +181,8 @@ PrintProfile(role: <span class="text-amber-300">"Admin"</span>, name: <span clas
                     <h3 class="font-bold text-slate-900 text-base mb-2">সেলসিয়াস থেকে ফারেনহাইট কনভার্টার</h3>
                     <p class="text-sm text-slate-600 mb-4">একটি মেথড তৈরি করুন যার নাম হবে
                         <code>CelsiusToFahrenheit</code>। এটি ইনপুট হিসেবে একটি <code>double celsius</code> মান নিবে এবং
-                        হিসাব নিকাশ করে ফারেনহাইট মানটি রিটার্ন করবে। সূত্র: $F = (C \times 9/5) + 32$</p>
+                        হিসাব নিকাশ করে ফারেনহাইট মানটি রিটার্ন করবে। সূত্র: $F = (C \times 9/5) + 32$
+                    </p>
 
                     <details class="bg-slate-900 rounded-lg">
                         <summary

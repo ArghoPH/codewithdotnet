@@ -16,7 +16,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-indigo-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CONCEPT</span>
-                    <h2 class="text-2xl font-bold text-slate-900">ইনহেরিটেন্স বা উত্তরাধিকার কী?</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Inheritance or Inheritance Concept?</h2>
                 </div>
 
                 <p class="text-slate-700 mb-4 leading-relaxed">
@@ -48,7 +48,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-indigo-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">SYNTAX</span>
-                    <h2 class="text-2xl font-bold text-slate-900">C# ইনহেরিটেন্স কোড স্ট্রাকচার</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">C# Inheritance Syntax Structure</h2>
                 </div>
 
                 <pre
@@ -74,7 +74,7 @@ Console.WriteLine(myCar.Brand); <span class="text-slate-400">// Output: Generic<
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-blue-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">LIVE
                         LAB</span>
-                    <h2 class="text-2xl font-bold text-slate-900">ক্লাস হায়ারার্কি ভিজ্যুয়ালাইজার</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Class Hierarchy Visualizer</h2>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">নিচের ড্রপডাউন থেকে অবজেক্ট টাইপ পরিবর্তন করে "Trigger Method" এ
                     ক্লিক করুন। দেখুন কীভাবে চাইল্ড অবজেক্ট কোনো ডুপ্লিকেট লজিক ছাড়াই প্যারেন্ট ক্লাসের মেথড এক্সিকিউট
@@ -136,7 +136,7 @@ Console.WriteLine(myCar.Brand); <span class="text-slate-400">// Output: Generic<
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-amber-500 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CHALLENGE</span>
-                    <h2 class="text-2xl font-bold text-slate-900">ইনহেরিটেন্স আর্কিটেকচার চ্যালেঞ্জ</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Inheritance Coding Challenge</h2>
                 </div>
 
                 <div class="border border-slate-200 p-5 rounded-xl bg-slate-50">

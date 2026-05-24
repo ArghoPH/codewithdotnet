@@ -16,7 +16,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-violet-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CONCEPT</span>
-                    <h2 class="text-2xl font-bold text-slate-900">পলিমরফিজম কী এবং কেন প্রয়োজন?</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">What is Polymorphism? Why is it important?</h2>
                 </div>
 
                 <p class="text-slate-700 mb-4 leading-relaxed">
@@ -50,7 +50,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-violet-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">IMPLEMENTATION</span>
-                    <h2 class="text-2xl font-bold text-slate-900">C# মেথড ওভাররাইডিং স্ট্রাকচার</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">C# Method Overriding Structure</h2>
                 </div>
 
                 <pre
@@ -76,11 +76,12 @@
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-blue-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">LIVE
                         LAB</span>
-                    <h2 class="text-2xl font-bold text-slate-900">রানটাইম পলিমরফিজম ল্যাব</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Runtime Polymorphism Lab</h2>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">নিচের বাটনগুলো থেকে আলাদা আলাদা অবজেক্ট সিলেক্ট করে
                     <code>MakeSound()</code> মেথডটি কল করুন। একই মেথড কীভাবে অবজেক্ট পরিবর্তনের সাথে সাথে নিজের আউটপুট
-                    ডাইনামিকালি বদলে ফেলছে তা লাইভ দেখুন।</p>
+                    ডাইনামিকালি বদলে ফেলছে তা লাইভ দেখুন।
+                </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
                     <div
@@ -136,13 +137,13 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-amber-500 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CHALLENGE</span>
-                    <h2 class="text-2xl font-bold text-slate-900">পলিমরফিজম আর্কিটেকচার চ্যালেঞ্জ</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Polymorphism Challenge</h2>
                 </div>
 
                 <div class="border border-slate-200 p-5 rounded-xl bg-slate-50">
                     <span class="text-xs font-bold text-amber-800 uppercase tracking-widest block mb-1">Real
                         Scenario</span>
-                    <h3 class="font-bold text-slate-900 text-base mb-2">একটি Payment গেটওয়ে ওভাররাইড সিস্টেম তৈরি করুন
+                    <h3 class="font-bold text-slate-900 text-base mb-2">Create a Payment Gateway Override System
                     </h3>
                     <p class="text-sm text-slate-600 mb-4 leading-relaxed">
                         ১. একটি বেস ক্লাস তৈরি করুন <code>Payment</code> যার ভার্চুয়াল মেথড থাকবে

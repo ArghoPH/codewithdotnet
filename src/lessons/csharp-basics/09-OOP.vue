@@ -102,7 +102,7 @@
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-blue-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">LIVE
                         LAB</span>
-                    <h2 class="text-2xl font-bold text-slate-900">অবজেক্ট ফ্যাক্টরি ও মেমরি সিমুলেটর</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Object Factory and Memory Simulator</h2>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">নিচের ফর্মে ডাটা দিয়ে যতবার আপনি বাটন প্রেস করবেন, সিস্টেম
                     মেমরিতে (Heap Memory) একটি করে নতুন এবং স্বতন্ত্র অবজেক্ট ইনস্ট্যান্স তৈরি করবে।</p>
@@ -164,7 +164,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-amber-500 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CHALLENGE</span>
-                    <h2 class="text-2xl font-bold text-slate-900">কোডিং চ্যালেঞ্জ</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Coding Challenge</h2>
                 </div>
 
                 <div class="border border-slate-200 p-5 rounded-xl bg-slate-50">

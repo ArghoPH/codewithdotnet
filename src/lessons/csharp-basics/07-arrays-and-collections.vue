@@ -16,7 +16,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-teal-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         1</span>
-                    <h2 class="text-2xl font-bold text-slate-900">Single-Dimensional Array (একমাত্রিক অ্যারে)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Single-Dimensional Array</h2>
                 </div>
 
                 <p class="text-slate-700 mb-4">অ্যারে হলো একই টাইপের ডেটার একটি ফিক্সড সাইজ কালেকশন। অ্যারের প্রতিটি
@@ -39,7 +39,7 @@ Console.WriteLine(cars[<span class="text-emerald-400">2</span>]); <span class="t
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-blue-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">LIVE
                         LAB</span>
-                    <h2 class="text-2xl font-bold text-slate-900">ইনদকারেক্টিভ অ্যারে ভিজ্যুয়ালাইজার</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Interactive Array Visualizer</h2>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">নিচের ইনডেক্স ইনপুট পরিবর্তন করে দেখুন মেমরি থেকে কীভাবে
                     নির্দিষ্ট উপাদানটি খুঁজে বের করা হয় এবং ইনডেক্স রেঞ্জের বাইরে গেলে কী এরর আসে।</p>
@@ -92,7 +92,7 @@ Console.WriteLine(cars[<span class="text-emerald-400">2</span>]); <span class="t
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-teal-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">TOPIC
                         2</span>
-                    <h2 class="text-2xl font-bold text-slate-900">Multi-Dimensional & Jagged Arrays (উচ্চতর অ্যারে)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Multi-Dimensional & Jagged Arrays</h2>
                 </div>
                 <p class="text-slate-700 mb-6">বাস্তব জীবনের জটিল ডেটা যেমন ম্যাট্রিক্স বা টেবিল হ্যান্ডেল করার জন্য
                     C#-এ দু’ধরণের বহুমাত্রিক অ্যারে আছে:</p>
@@ -123,7 +123,7 @@ jagged[<span class="text-emerald-400">1</span>] = <span class="text-purple-400">
                 <div class="flex items-center gap-3 mb-6">
                     <span class="bg-purple-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">PRO
                         LEVEL</span>
-                    <h2 class="text-2xl font-bold text-slate-900">ডায়নামিক কালেকশন: List&lt;T&gt;</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Dynamic Collections &lt;T&gt;</h2>
                 </div>
                 <p class="text-slate-700 mb-4">ট্রেডিশনাল অ্যারের সবচেয়ে বড় সমস্যা হলো এর সাইজ বা দৈর্ঘ্য ফিক্সড
                     (Fixed)। কিন্তু রিয়েল-ওয়ার্ল্ড অ্যাপ্লিকেশনে ডেটা যেকোনো সময় বাড়তে বা কমতে পারে। এই সমস্যার সমাধান
@@ -150,7 +150,7 @@ students.Remove(<span class="text-amber-300">"Rahim"</span>);</pre>
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-amber-500 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CHALLENGE</span>
-                    <h2 class="text-2xl font-bold text-slate-900">অ্যারে ও লুপ কম্বাইন্ড চ্যালেঞ্জ</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Arrey and Loop Combined Challange</h2>
                 </div>
 
                 <div class="space-y-6">
@@ -161,7 +161,8 @@ students.Remove(<span class="text-amber-300">"Rahim"</span>);</pre>
                         </h3>
                         <p class="text-sm text-slate-600 mb-4">একটি ইন্টিজার অ্যারে
                             <code>int[] numbers = { 13, 56, 2, 89, 24 };</code> থেকে লুপ চালিয়ে সবচেয়ে বড় সংখ্যাটি খুঁজে
-                            বের করার লজিক লিখুন।</p>
+                            বের করার লজিক লিখুন।
+                        </p>
                         <details class="bg-slate-900 rounded-lg">
                             <summary
                                 class="text-xs font-mono text-slate-400 p-3 cursor-pointer hover:text-white select-none">

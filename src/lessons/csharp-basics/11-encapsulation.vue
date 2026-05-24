@@ -16,7 +16,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-rose-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CONCEPT</span>
-                    <h2 class="text-2xl font-bold text-slate-900">এনক্যাপসুলেশন কী?</h2>
+                    <h2 class="text-2xl font-bold text-slate-900"> What is Encapsulation? </h2>
                 </div>
 
                 <p class="text-slate-700 mb-4 leading-relaxed">
@@ -63,7 +63,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-rose-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">IMPLEMENTATION</span>
-                    <h2 class="text-2xl font-bold text-slate-900">রিয়েল-ওয়ার্ল্ড সিকিউরড প্যাটার্ন</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Real World Secure Pattern</h2>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -101,7 +101,7 @@
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-blue-600 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">LIVE
                         LAB</span>
-                    <h2 class="text-2xl font-bold text-slate-900">ATM Pin ভ্যালিডেশন সিমুলেটর (Encapsulation in Action)
+                    <h2 class="text-2xl font-bold text-slate-900">ATM Pin Vaidation Simulator (Encapsulation in Action)
                     </h2>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">নিচের ল্যাবে অবজেক্টের সিক্রেট পিন কোড <code>private</code> করা
@@ -173,7 +173,7 @@
                 <div class="flex items-center gap-3 mb-6">
                     <span
                         class="bg-amber-500 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CHALLENGE</span>
-                    <h2 class="text-2xl font-bold text-slate-900">এনক্যাপসুলেশন চ্যালেঞ্জ</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Encapsulation Challenge</h2>
                 </div>
 
                 <div class="border border-slate-200 p-5 rounded-xl bg-slate-50">
