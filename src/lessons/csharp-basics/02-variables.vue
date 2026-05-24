@@ -283,10 +283,11 @@
                     <p class="text-sm text-slate-700">আপনি ভেরিয়েবলের বেসিক থেকে অ্যাডভান্সড কনসেপ্ট সম্পূর্ণ করেছেন।
                     </p>
                 </div>
-                <button
-                    class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-6 rounded-lg text-sm transition shadow-sm">
+                <router-link
+                    class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-6 rounded-lg text-sm transition shadow-sm"
+                    :to="'/lessons/operators-challenges'">
                     Next: Operators Challenges <i class="fa-solid fa-arrow-right ml-2"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>

@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
-// Default state 75 সেট করা আছে, যা স্লাইডারের সাথে টু-ওয়ে বাইন্ডিং (v-model) এ থাকবে
+// Default state 75 marks
 const marks = ref(75);
 </script>
 
@@ -166,7 +166,7 @@ const marks = ref(75);
                         <div
                             class="bg-slate-950 p-4 rounded-lg border border-slate-800 flex-1 font-mono text-xs md:text-sm leading-relaxed space-y-1">
                             <div><span class="text-purple-400">int</span> marks = <span class="text-amber-400">{{ marks
-                            }}</span>;</div>
+                                    }}</span>;</div>
                             <br />
                             <!-- IF BLOCK HIGHLIGHT -->
                             <div
@@ -280,20 +280,22 @@ Console.WriteLine(score); // Output: 110 </pre>
 
             </section>
 
-            <!-- PROGRESS TRACKER -->
+            <!-- ========================================== -->
+            <!-- FINAL TRACKER AND ACTIONS -->
+            <!-- ========================================== -->
             <div
-                class="bg-slate-900 text-white p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+                class="bg-emerald-50 border border-emerald-200 p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4">
                 <div>
-                    <span class="text-xs text-emerald-400 font-mono font-bold tracking-widest uppercase">Next
-                        Milestone</span>
-                    <h3 class="text-xl font-bold mt-1">শর্তাধীন সিদ্ধান্ত (Conditionals: If-Else)</h3>
-                    <p class="text-sm text-slate-400 mt-1">অপারেটরের লজিকগুলো ব্যবহার করে কীভাবে অ্যাপ্লিকেশনে সিদ্ধান্ত
-                        (Decision Making) নিতে হয় তা শিখবো পরবর্তী পর্বে।</p>
+                    <h4 class="text-xs font-bold text-emerald-700 uppercase tracking-widest mb-1">Module Status:
+                        Completed 🎉</h4>
+                    <p class="text-sm text-slate-700">আপনি ভেরিয়েবলের বেসিক থেকে অ্যাডভান্সড কনসেপ্ট সম্পূর্ণ করেছেন।
+                    </p>
                 </div>
-                <button
-                    class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
-                    Start Next Lesson <i class="fa-solid fa-bolt ml-1"></i>
-                </button>
+                <router-link
+                    class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-6 rounded-lg text-sm transition shadow-sm"
+                    :to="'/lessons/conditional-if-else'">
+                    Next: Conditional If/Else <i class="fa-solid fa-arrow-right ml-2"></i>
+                </router-link>
             </div>
 
 
