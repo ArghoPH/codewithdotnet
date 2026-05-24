@@ -159,13 +159,15 @@
                         <div class="bg-emerald-50 p-5 rounded-xl border border-emerald-200">
                             <h3
                                 class="text-sm font-bold text-emerald-800 uppercase tracking-widest mb-3 flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check"></i> Do's (যা করবেন)
+                                <i class="fa-solid fa-circle-check"></i> Do (যা করবেন)
                             </h3>
                             <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside">
                                 <li>নামকরণে <strong>camelCase</strong> ফলো করুন (যেমন: <code>totalAmount</code>,
-                                    <code>isUserLoggedIn</code>)।</li>
+                                    <code>isUserLoggedIn</code>)।
+                                </li>
                                 <li>অর্থপূর্ণ নাম দিন যাতে কোড দেখেই বোঝা যায় (যেমন: <code>x</code> না লিখে
-                                    <code>userScore</code> লিখুন)।</li>
+                                    <code>userScore</code> লিখুন)।
+                                </li>
                                 <li>নামের শুরুতে লেটার বা আন্ডারস্কোর (_) ব্যবহার করতে পারবেন।</li>
                             </ul>
                         </div>
@@ -173,7 +175,7 @@
                         <div class="bg-rose-50 p-5 rounded-xl border border-rose-200">
                             <h3
                                 class="text-sm font-bold text-rose-800 uppercase tracking-widest mb-3 flex items-center gap-2">
-                                <i class="fa-solid fa-circle-xmark"></i> Don'ts (যা করা নিষিদ্ধ)
+                                <i class="fa-solid fa-circle-xmark"></i> Don't (যা করা নিষিদ্ধ)
                             </h3>
                             <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside">
                                 <li>নামের শুরুতে সংখ্যা দেওয়া যাবে না (যেমন: <del class="text-rose-600">1stPlace</del>
