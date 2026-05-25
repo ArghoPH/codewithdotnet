@@ -175,7 +175,7 @@
                         class="bg-amber-500 text-white font-mono text-xs px-3 py-1.5 rounded-full font-bold">CHALLENGE</span>
                     <h2 class="text-2xl font-bold text-slate-900">Encapsulation Challenge</h2>
                 </div>
-
+ 
                 <div class="border border-slate-200 p-5 rounded-xl bg-slate-50">
                     <span class="text-xs font-bold text-amber-800 uppercase tracking-widest block mb-1">Scenario</span>
                     <h3 class="font-bold text-slate-900 text-base mb-2">একটি SmartThermostat ক্লাস ডিজাইন করুন</h3>
