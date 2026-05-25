@@ -66,7 +66,7 @@ watch(searchQuery, () => {
         </p>
 
         <p class="mt-2 text-sm text-slate-400">
-            Developed by <a href="https://github.com/Argho" class="underline">Argho</a>
+            Developed by <a href="https://www.linkedin.com/in/argho-chakma-0442561ba/" class="underline">Argho</a>
         </p>
 
         <div class="mt-5">
