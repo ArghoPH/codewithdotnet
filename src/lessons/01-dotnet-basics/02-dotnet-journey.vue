@@ -61,7 +61,8 @@
                         <ul class="space-y-3 text-slate-700">
                             <li><strong class="text-slate-900">.NET কী:</strong> এটি একটি ফ্রেমওয়ার্ক বা প্ল্যাটফর্ম।
                                 <span class="text-slate-500 italic">Example:</span> আপনি যদি গাড়ি (App) বানান, .NET হলো
-                                সেই গাড়ি বানানোর কারখানা।</li>
+                                সেই গাড়ি বানানোর কারখানা।
+                            </li>
                             <li><strong class="text-slate-900">C# কী:</strong> এটি একটি প্রোগ্রামিং ভাষা। <span
                                     class="text-slate-500 italic">Example:</span> কারখানার মেশিন চালানোর জন্য যে ভাষায়
                                 ইনস্ট্রাকশন দিতে হয়।</li>
@@ -257,13 +258,16 @@ age = <span class="text-emerald-400">26</span>; <span class="text-slate-400">// 
                             <li><strong class="text-slate-900">int:</strong> Whole numbers বা পূর্ণসংখ্যা। <span
                                     class="text-slate-500 italic">Example:</span> 10, -50</li>
                             <li><strong class="text-slate-900">double:</strong> Fractional numbers বা দশমীক সংখ্যা।
-                                <span class="text-slate-500 italic">Example:</span> 10.5</li>
+                                <span class="text-slate-500 italic">Example:</span> 10.5
+                            </li>
                             <li><strong class="text-slate-900">decimal:</strong> Financial precision numbers (টাকা-পয়সার
                                 নিখুঁত হিসাব)। <span class="text-slate-500 italic">Example:</span> 10.99M</li>
                             <li><strong class="text-slate-900">bool:</strong> True or False (যেকোনো যৌক্তিক সিদ্ধান্ত)।
-                                <span class="text-slate-500 italic">Example:</span> true</li>
+                                <span class="text-slate-500 italic">Example:</span> true
+                            </li>
                             <li><strong class="text-slate-900">char:</strong> Single character বা একটি মাত্র অক্ষর।
-                                <span class="text-slate-500 italic">Example:</span> 'A'</li>
+                                <span class="text-slate-500 italic">Example:</span> 'A'
+                            </li>
                         </ul>
                     </div>
 
@@ -1403,9 +1407,11 @@ File.WriteAllText(<span class="text-amber-300">"data.txt"</span>, <span class="t
                     </div>
 
                     <div class="mt-8 pt-6 border-t border-slate-100 text-center">
-                        <button
-                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition">Start
-                            Coding Now!</button>
+                        <routerLink to="/lessons/dotnet-setup"
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition">
+                            Start
+                            Coding Now!
+                        </routerLink>
                     </div>
                 </div>
             </section>

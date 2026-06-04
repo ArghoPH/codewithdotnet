@@ -144,10 +144,10 @@
                 <p class="text-slate-700 font-medium">Program.cs (Code) | csproj (Config) | bin & obj (Build outputs)
                 </p>
             </div>
-            <button
+            <routerLink to="/lessons/folder-structure-02"
                 class="bg-slate-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2">
-                Next: Variables & Data Types <i class="fa-solid fa-arrow-right"></i>
-            </button>
+                Next: Folder Structure of .NET Part 2 <i class="fa-solid fa-arrow-right"></i>
+            </routerLink>
         </footer>
 
     </div>

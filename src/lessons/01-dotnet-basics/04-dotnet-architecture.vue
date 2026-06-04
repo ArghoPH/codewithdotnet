@@ -141,7 +141,8 @@
                         <h4 class="font-bold text-slate-800">IL (Intermediate Language)</h4>
                         <p class="text-sm text-slate-600 mt-1">কম্পাইলার কোডটিকে সরাসরি মেশিন কোডে রূপান্তর করে না। এর
                             বদলে সে একটি মাঝামাঝি ভাষায় কোডটিকে পরিণত করে, যাকে IL বলে। এটি সাধারণত <code>.dll</code> বা
-                            <code>.exe</code> ফাইল হিসেবে সেভ হয়। এটি .NET এর নিজস্ব ভাষা।</p>
+                            <code>.exe</code> ফাইল হিসেবে সেভ হয়। এটি .NET এর নিজস্ব ভাষা।
+                        </p>
                     </div>
                 </div>
 
@@ -199,10 +200,10 @@
                 <p class="text-slate-700 font-medium">C# &rarr; Compiler &rarr; IL Code &rarr; CLR (JIT) &rarr; Machine
                     Code</p>
             </div>
-            <button
+            <routerLink to="/lessons/folder-structure"
                 class="bg-slate-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2">
-                Next: Variables & Data Types <i class="fa-solid fa-arrow-right"></i>
-            </button>
+                Next: Structure of .NET <i class="fa-solid fa-arrow-right"></i>
+            </routerLink>
         </footer>
 
     </div>
