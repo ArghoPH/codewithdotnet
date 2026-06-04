@@ -128,10 +128,10 @@
                         আমাদের এই সিরিজের শেষ মডিউলে আমরা <b>Advanced LINQ (Language Integrated Query)</b> এবং ডাটা
                         স্ট্রিম নিয়ে কাজ করবো, যা ডাটা ম্যানিপুলেশনকে করবে সহজ ও এফিশিয়েন্ট।</p>
                 </div>
-                <button
+                <router-link to="/lessons/linq-advanced"
                     class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Finish Course with LINQ <i class="fa-solid fa-code-branch ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>
