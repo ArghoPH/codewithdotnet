@@ -218,10 +218,10 @@ manager.StartProcess();</pre>
                         সম্পন্ন করেছেন। এবার আমরা শিখবো কীভাবে আপনার অ্যাপ্লিকেশন থেকে লোকাল হার্ডডিস্ক বা সার্ভারে ফাইল
                         তৈরি করা, রিড করা এবং এক্সেল বা ডট-টেক্সট ফাইল এক্সপোর্ট/ইমপোর্ট করা যায় (System.IO)।</p>
                 </div>
-                <button
+                <router-link to="/lessons/files-streams"
                     class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
-                    Advance to File I/O <i class="fa-solid fa-file-arrow-down ml-1"></i>
-                </button>
+                    Files Streams <i class="fa-solid fa-file-arrow-down ml-1"></i>
+                </router-link>
             </div>
 
         </div>
