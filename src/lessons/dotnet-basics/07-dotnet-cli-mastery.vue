@@ -431,7 +431,7 @@
                     class="px-6 py-3 border border-slate-300 text-slate-700 hover:bg-slate-50 rounded-xl font-medium transition-colors flex items-center justify-center gap-2">
                     <i class="fa-solid fa-folder-tree"></i> Back to Structure
                 </button>
-                <router-link to="/csharp-basics/what-is-csharp"
+                <router-link to="/lessons/what-is-csharp"
                     class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition-colors shadow-md shadow-blue-200 flex items-center justify-center gap-2 group">
                     Start C# Basics Module
                     <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
