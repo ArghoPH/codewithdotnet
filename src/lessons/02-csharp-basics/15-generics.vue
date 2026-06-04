@@ -74,7 +74,8 @@ strBox.Content = <span class="text-amber-300">"Hello Generics"</span>;</pre>
                 </div>
                 <p class="text-slate-600 text-sm mb-6">নিচের ল্যাবে একটি সিঙ্গেল জেনেরিক ক্লাস
                     <code>DataBox&lt;T&gt;</code> ব্যাক-এন্ডে কাজ করছে। আপনি ড্রপডাউন থেকে যে টাইপ সিলেক্ট করবেন,
-                    রানটাইমে প্লেসহোল্ডার <code>&lt;T&gt;</code> ঠিক সেই টাইপে রূপান্তরিত হয়ে ডাটা প্রসেস করবে।</p>
+                    রানটাইমে প্লেসহোল্ডার <code>&lt;T&gt;</code> ঠিক সেই টাইপে রূপান্তরিত হয়ে ডাটা প্রসেস করবে।
+                </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
                     <div
@@ -180,12 +181,13 @@ util.PrintData&lt;<span class="text-purple-400">string</span>&gt;(<span class="t
                     <p class="text-sm text-slate-400 mt-1">জেনেরিক্স শেখার পর লার্নাররা এখন ডায়নামিক স্ট্রাকচার বোঝে। এর
                         ঠিক পরেই আমরা সি-শার্পের সবচেয়ে বেশি ব্যবহৃত ফিচার—<b>Collections</b> (বিশেষ করে ডাইনামিক
                         <code>List&lt;T&gt;</code> এবং <code>Dictionary&lt;TKey, TValue&gt;</code>) নিয়ে বিশদ আলোচনা করব
-                        যা রিয়েল প্রজেক্টে ডাটা অ্যারে হ্যান্ডেল করার জন্য অপরিহার্য।</p>
+                        যা রিয়েল প্রজেক্টে ডাটা অ্যারে হ্যান্ডেল করার জন্য অপরিহার্য।
+                    </p>
                 </div>
-                <button
+                <router-link to="/lessons/collections-lists"
                     class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Advance to Collections <i class="fa-solid fa-list-check ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>

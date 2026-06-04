@@ -187,10 +187,10 @@
                         এর ঠিক পরেই আমরা প্রবেশ করব সি-শার্প এর অ্যাডভান্সড মেমরি ও টাইপ সেফটি ওয়ার্ল্ডে, যেখানে একই
                         ক্লাস দিয়ে ভিন্ন ভিন্ন ডাটা টাইপ প্রসেস করার ম্যাজিক (Generics) শিখবো।</p>
                 </div>
-                <button
+                <router-link to="/lessons/generics"
                     class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Advance to Generics <i class="fa-solid fa-gears ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>
