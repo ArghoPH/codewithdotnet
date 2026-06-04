@@ -196,10 +196,10 @@
                         (যেমন: ডাটাবেজ ক্র্যাশ বা নেটওয়ার্ক ড্রপ) ঘটলে পুরো সফটওয়্যার ক্র্যাশ হতে না দিয়ে সুন্দরভাবে এরর
                         হ্যান্ডেল করতে হয় (Try-Catch-Finally Blocks)।</p>
                 </div>
-                <button
+                <router-link to="/lessons/exception-handling"
                     class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Advance to Exception Handling <i class="fa-solid fa-triangle-exclamation ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>

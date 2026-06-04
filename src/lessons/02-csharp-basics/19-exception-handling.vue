@@ -180,10 +180,10 @@
                         আর্কিটেকচার ডিজাইনে, যেখানে মেথডকে ভ্যারিয়েবলের মতো পাস করা এবং এক ক্লাসের ডাটা চেঞ্জ হলে অন্য
                         ক্লাসে অটো নোটিফিকেশন পাঠানোর মেকানিজম (Delegates & Events) শিখবো।</p>
                 </div>
-                <button
+                <router-link to="/lessons/delegates-events"
                     class="bg-rose-500 hover:bg-rose-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Advance to Delegates <i class="fa-solid fa-circle-nodes ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>
