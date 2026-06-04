@@ -187,10 +187,10 @@
                         ক্লাসের ভেতরের অপ্রয়োজনীয় জটিল ইমপ্লিমেন্টেশন লুকিয়ে শুধু প্রয়োজনীয় ফিচারগুলো এক্সপোজ করতে হয়
                         এবং কীভাবে বড় সফটওয়্যারের আর্কিটেকচারাল নকশা (Interface) তৈরি করতে হয়।</p>
                 </div>
-                <button
+                <router-link to="/lessons/abstraction"
                     class="bg-violet-500 hover:bg-violet-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Next: Abstraction <i class="fa-solid fa-layer-group ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>
