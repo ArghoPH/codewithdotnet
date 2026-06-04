@@ -266,10 +266,10 @@
                     <p class="text-sm text-slate-400 mt-1">পরবর্তী মডিউলে আমরা শিখবো কীভাবে লজিকগুলোকে ছোট ছোট ব্লকে ভাগ
                         করে কোডকে আরও স্মার্ট ও রিইউজেবল করা যায়।</p>
                 </div>
-                <button
+                <router-link to="/lessons/arrays-and-collections"
                     class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
-                    Next: Methods <i class="fa-solid fa-arrow-right ml-1"></i>
-                </button>
+                    Next: Arrays and Collections <i class="fa-solid fa-arrow-right ml-1"></i>
+                </router-link>
             </div>
 
         </div>
