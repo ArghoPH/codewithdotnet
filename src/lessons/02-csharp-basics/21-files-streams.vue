@@ -194,10 +194,10 @@
                         শিখবো, যার মাধ্যমে রানটাইমে অবজেক্টের মেটাডাটা অ্যানালাইসিস করা এবং ক্লাস-মেথডের ভেতরের সিক্রেট
                         স্ট্রাকচার ডাইনামিকালি রিড করা যায়।</p>
                 </div>
-                <button
+                <router-link to="/lessons/attributes-and-reflection"
                     class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Advance to Reflection <i class="fa-solid fa-wand-magic-sparkles ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>
