@@ -192,10 +192,10 @@ Console.WriteLine(<span class="text-amber-300">"Max value is: "</span> + max); <
                     <p class="text-sm text-slate-400 mt-1">একই কোড বারবার কপি-পেস্ট না করে কীভাবে অবজেক্ট-ওরিয়েন্টেড
                         উপায়ে মেথড বা ফাংশন তৈরি করে রিইউজ করা যায়, তা শিখবো পরের পর্বে।</p>
                 </div>
-                <button
+                <router-link to="/lessons/methods-and-functions"
                     class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
-                    Next: C# Methods <i class="fa-solid fa-code ml-1"></i>
-                </button>
+                    Next: Methods & Functions <i class="fa-solid fa-code ml-1"></i>
+                </router-link>
             </div>
 
         </div>
