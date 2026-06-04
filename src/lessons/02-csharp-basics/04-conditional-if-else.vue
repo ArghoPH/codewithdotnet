@@ -110,7 +110,7 @@ const score = ref(75);
                     <div
                         class="bg-slate-950 p-4 rounded-lg border border-slate-800 font-mono text-xs md:text-sm space-y-1">
                         <div><span class="text-purple-400">int</span> examScore = <span class="text-amber-400">{{ score
-                                }}</span>;</div>
+                        }}</span>;</div>
                         <br />
                         <div
                             :class="{ 'bg-emerald-500/10 border-l-2 border-emerald-500 pl-2 text-emerald-300': score >= 80, 'opacity-30': score < 80 }">
@@ -314,10 +314,10 @@ Console.WriteLine(permission);</pre>
                     <p class="text-sm text-slate-400 mt-1">পরবর্তী মডিউলে আমরা শিখবো কীভাবে লুপ ব্যবহার করে একটি কোডকে
                         বারবার না লিখে অটোমেটিক রান করানো যায়।</p>
                 </div>
-                <button
+                <router-link to="/lessons/operators-challenges"
                     class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
-                    Next Chapter: Loops <i class="fa-solid fa-arrow-right ml-1"></i>
-                </button>
+                    Next Chapter: Operators Challenges <i class="fa-solid fa-arrow-right ml-1"></i>
+                </router-link>
             </div>
 
         </div>

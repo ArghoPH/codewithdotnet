@@ -21,7 +21,8 @@
 
                 <p class="text-slate-700 mb-4">গণিত করার জন্য C#-এ ৫টি প্রধান অপারেটর রয়েছে: <code>+</code> (যোগ),
                     <code>-</code> (বিয়োগ), <code>*</code> (গুণ), <code>/</code> (ভাগ), এবং <code>%</code> (Modulus বা
-                    ভাগশেষ)।</p>
+                    ভাগশেষ)।
+                </p>
 
                 <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 text-sm text-slate-700 mb-6">
                     <strong>⚠️ Integer Division ট্র্যাপ:</strong> C#-এ দুটি <code>int</code> সংখ্যাকে ভাগ করলে আউটপুট
@@ -92,7 +93,7 @@ Console.WriteLine(<span class="text-emerald-400">10.0</span> / <span class="text
                         <div
                             class="bg-black/40 p-4 rounded-lg flex flex-col justify-center space-y-2 text-xs md:text-sm">
                             <div><span class="text-slate-500">&gt;</span> Current Mode: <span class="text-amber-400">{{
-                                    labMode }}</span></div>
+                                labMode }}</span></div>
                             <div><span class="text-slate-500">&gt;</span> Value of <span
                                     class="text-purple-400">x</span> in Memory: <span
                                     class="text-emerald-400 font-bold">{{ labX }}</span></div>
@@ -268,13 +269,16 @@ Console.WriteLine(canEnter); <span class="text-slate-400">// Output: True</span>
                     <div class="flex justify-between font-mono"><span>Multiplicative <code>*</code> , <code>/</code> ,
                             <code>%</code></span> <span class="text-blue-500 font-medium">3rd</span></div>
                     <div class="flex justify-between font-mono"><span>Additive <code>+</code> , <code>-</code></span>
-                        <span class="text-amber-500 font-medium">4th</span></div>
+                        <span class="text-amber-500 font-medium">4th</span>
+                    </div>
                     <div class="flex justify-between font-mono"><span>Relational <code>&gt;</code> , <code>&lt;=</code>
                             , <code>==</code></span> <span class="text-orange-500 font-medium">5th</span></div>
                     <div class="flex justify-between font-mono"><span>Logical <code>&&</code> , <code>||</code></span>
-                        <span class="text-rose-500 font-medium">6th</span></div>
+                        <span class="text-rose-500 font-medium">6th</span>
+                    </div>
                     <div class="flex justify-between font-mono"><span>Assignment <code>=</code> , <code>+=</code></span>
-                        <span class="text-slate-400 font-medium">Last (সর্বনিম্ন)</span></div>
+                        <span class="text-slate-400 font-medium">Last (সর্বনিম্ন)</span>
+                    </div>
                 </div>
             </section>
 
@@ -287,10 +291,10 @@ Console.WriteLine(canEnter); <span class="text-slate-400">// Output: True</span>
                     <p class="text-sm text-slate-400 mt-1">এইমাত্র শেখা কন্ডিশনাল এবং কম্প্যারিসন অপারেটরগুলোকে ব্যবহার
                         করে কীভাবে অ্যাপ্লিকেশনের লজিক কন্ট্রোল করতে হয় তা শিখবো পরবর্তী মডিউলে।</p>
                 </div>
-                <button
+                <router-link to="/lessons/conditional-if-else"
                     class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Proceed to Conditionals <i class="fa-solid fa-arrow-right ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>

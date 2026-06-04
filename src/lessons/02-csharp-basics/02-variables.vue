@@ -285,7 +285,7 @@
                 </div>
                 <router-link
                     class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-6 rounded-lg text-sm transition shadow-sm"
-                    :to="'/lessons/operators-challenges'">
+                    :to="'/lessons/operators'">
                     Next: Operators Challenges <i class="fa-solid fa-arrow-right ml-2"></i>
                 </router-link>
             </div>
