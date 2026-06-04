@@ -180,10 +180,10 @@ Console.WriteLine(myCar.Brand); <span class="text-slate-400">// Output: Generic<
                         চাইল্ড ক্লাসে এসে প্যারেন্টের মেথডকে নিজের মতো করে ওভাররাইড (Override) বা মডিফাই করতে হয়, তা
                         শিখবো পরবর্তী মডিউলে।</p>
                 </div>
-                <button
+                <router-link to="/lessons/polymorphism"
                     class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Next: Polymorphism <i class="fa-solid fa-wand-magic-sparkles ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>
