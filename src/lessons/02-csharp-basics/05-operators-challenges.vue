@@ -166,7 +166,7 @@ const marks = ref(75);
                         <div
                             class="bg-slate-950 p-4 rounded-lg border border-slate-800 flex-1 font-mono text-xs md:text-sm leading-relaxed space-y-1">
                             <div><span class="text-purple-400">int</span> marks = <span class="text-amber-400">{{ marks
-                                    }}</span>;</div>
+                            }}</span>;</div>
                             <br />
                             <!-- IF BLOCK HIGHLIGHT -->
                             <div
@@ -293,8 +293,8 @@ Console.WriteLine(score); // Output: 110 </pre>
                 </div>
                 <router-link
                     class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-6 rounded-lg text-sm transition shadow-sm"
-                    :to="'/lessons/conditional-if-else'">
-                    Next: Conditional If/Else <i class="fa-solid fa-arrow-right ml-2"></i>
+                    :to="'/lessons/loops'">
+                    Next: Loops <i class="fa-solid fa-arrow-right ml-2"></i>
                 </router-link>
             </div>
 
