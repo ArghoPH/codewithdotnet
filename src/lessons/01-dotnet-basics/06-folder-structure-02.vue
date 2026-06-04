@@ -175,7 +175,7 @@
                 <p class="text-slate-700 font-medium">.csproj is the heart. Program.cs is the brain. bin is the output.
                 </p>
             </div>
-            <routerLink to="/lessons/cli-mastery"
+            <routerLink to="/lessons/dotnet-cli-mastery"
                 class="bg-slate-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2">
                 CLI Masterclass <i class="fa-solid fa-arrow-right"></i>
             </routerLink>
