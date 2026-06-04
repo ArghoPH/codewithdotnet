@@ -187,10 +187,10 @@ stockBatch.Add(<span class="text-emerald-400">308</span>);
                         ফিল্টারিং। পরবর্তী চ্যাপ্টারে আমরা শিখবো সি-শার্পের অন্যতম সেরা ফিচার <b>LINQ</b>, যার মাধ্যমে
                         বিশাল কোনো লিস্ট বা কালেকশন থেকে মাত্র এক লাইনে ডাটা কোয়েরি ও ফিল্টার করা যায়।</p>
                 </div>
-                <button
+                <router-link to="/lessons/linq"
                     class="bg-sky-500 hover:bg-sky-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Advance to LINQ <i class="fa-solid fa-filter ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>

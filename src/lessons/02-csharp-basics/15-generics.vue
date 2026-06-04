@@ -118,7 +118,7 @@ strBox.Content = <span class="text-amber-300">"Hello Generics"</span>;</pre>
                                 <div v-for="(item, idx) in boxItems" :key="idx"
                                     class="flex justify-between items-center border-b border-slate-800 pb-1.5 last:border-0">
                                     <span class="text-slate-400">DataBox&lt;<span class="text-cyan-400">{{ item.type
-                                            }}</span>&gt;</span>
+                                    }}</span>&gt;</span>
                                     <span class="text-amber-400 font-bold">Content: {{ item.val }}</span>
                                 </div>
                             </div>
@@ -189,7 +189,6 @@ util.PrintData&lt;<span class="text-purple-400">string</span>&gt;(<span class="t
                     Advance to Collections <i class="fa-solid fa-list-check ml-1"></i>
                 </router-link>
             </div>
-
         </div>
     </div>
 </template>

@@ -216,10 +216,10 @@
                         এরপর আমরা সি-শার্পের অত্যন্ত অ্যাডভান্সড একটি টপিকে যাবো—কীভাবে আমাদের মেইন অ্যাপ্লিকেশন ফ্রিজ
                         বা হ্যাং না করে ব্যাকগ্রাউন্ডে ডাটাবেজ লোডিং বা API কল করা যায় (Async/Await)।</p>
                 </div>
-                <button
+                <router-link to="/lessons/async-await"
                     class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Advance to Async <i class="fa-solid fa-stopwatch ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>
