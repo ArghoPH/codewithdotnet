@@ -212,10 +212,10 @@ Console.WriteLine(fahrenheit); <span class="text-slate-400">// Output: 98.6</spa
                         বাস্তব জীবনের অবজেক্ট এবং ক্লাস (Class & Object) তৈরি করতে হয়, তা দিয়ে শুরু হবে আমাদের মূল
                         সি-শার্প ওওপি জার্নি।</p>
                 </div>
-                <button
+                <router-link to="/lessons/OOP"
                     class="bg-sky-500 hover:bg-sky-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Enter OOP World <i class="fa-solid fa-cube ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>

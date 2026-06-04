@@ -211,10 +211,10 @@
                         প্রথম এবং সবচেয়ে গুরুত্বপূর্ণ পিলার—এনক্যাপসুলেশন এবং অ্যাক্সেস মডিফায়ার (Public, Private,
                         Protected) নিয়ে ইন-ডেপ্থ কাজ করব।</p>
                 </div>
-                <button
+                <router-link to="/lessons/encapsulation"
                     class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
                     Next: Encapsulation <i class="fa-solid fa-shield-halved ml-1"></i>
-                </button>
+                </router-link>
             </div>
 
         </div>

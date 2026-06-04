@@ -211,10 +211,10 @@ p.DisplayDetails();</pre>
                     <p class="text-sm text-slate-400 mt-1">অবজেক্ট তৈরির মুহূর্তে ডাটা অ্যাসাইন করার অটোমেটিক মেকানিজম
                         এবং প্রোপার্টির মাধ্যমে এনক্যাপসুলেশনের প্রাথমিক নিয়মগুলো জানবো পরবর্তী চ্যাপ্টারে।</p>
                 </div>
-                <button
+                <router-link to="/lessons/constructors-properties"
                     class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-xl text-sm transition whitespace-nowrap shadow-md">
-                    Proceed to Module 10 <i class="fa-solid fa-arrow-right ml-1"></i>
-                </button>
+                    Next Module: Constructors & Properties <i class="fa-solid fa-arrow-right ml-1"></i>
+                </router-link>
             </div>
 
         </div>
