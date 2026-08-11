@@ -26,7 +26,6 @@ const filteredCourses = computed(() => {
                 ),
             }
         })
-        
 
         .filter((course) => course.lessons.length > 0)
 })
