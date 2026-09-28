@@ -98,7 +98,6 @@ watch(searchQuery, () => {
                 </button>
 
                 <div v-if="isCourseOpen(course.title)" class="mt-3 space-y-2">
-
                     <RouterLink v-for="lesson in course.lessons" :key="lesson.slug" :to="`/lessons/${lesson.slug}`"
                         :class="[
                             'block rounded-lg px-4 py-3 text-sm transition',
