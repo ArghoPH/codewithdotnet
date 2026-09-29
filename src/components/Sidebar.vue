@@ -108,7 +108,6 @@ watch(searchQuery, () => {
                         ]">
                         {{ lesson.title }}
                     </RouterLink>
-
                 </div>
 
 
